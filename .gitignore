@@ -22,3 +22,8 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/hw/HW06Arrays/ChickenFarm/nbproject/private/
+/ws/elascano/WS04Classes/ChickenFarm/nbproject/private/
+/ws/elascano/WS04Classes/ChickenFarm/build/
+/hw/elascano/u1/ws06arrays/ChickenFarm/nbproject/private/
+/hw/elascano/u1/ws06arrays/ChickenFarm/build/
