@@ -54,6 +54,5 @@ public class ChickenFarmSystem {
             chickens[i]=chicken;
             System.out.println("Chicken "+(i+1)+"-->"+ chickens[i]);
         }
-
     }
 }
