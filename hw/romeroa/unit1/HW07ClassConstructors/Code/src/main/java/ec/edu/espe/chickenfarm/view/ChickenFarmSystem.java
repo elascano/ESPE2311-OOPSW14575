@@ -13,10 +13,11 @@ public class ChickenFarmSystem {
     private static Chicken[] allChickens = new Chicken[8];
     private static int allChickensIndex = 0;
     private static final Scanner consoleInput = new Scanner(System.in);
+
     public static void main(String[] args) {
         // Exercises in class
         Poop poop = new Poop();
-        Egg egg = new Egg();
+        Egg egg = new Egg(1);
         Chicken chicken = new Chicken(1, "Lucy", "White&Black", 2, true);
         allChickens[allChickensIndex] = chicken;
         allChickensIndex++;
@@ -30,12 +31,12 @@ public class ChickenFarmSystem {
 
         // Exercise 1: Create chicken2
         System.out.println("________ Homework exercise 1: ________");
-        exercise1();
+        // exercise1();
         consolePause();
 
         // Exercise 2: Create anotherChicken based on user's input
         System.out.println("________ Homework exercise 2: ________");
-        exercise2();
+        // exercise2();
         consolePause();
 
         // Exercise 3: Create 5 chickens based on user's input
@@ -61,13 +62,16 @@ public class ChickenFarmSystem {
     }
 
     private static void exercise3() {
-        Chicken[] chickens = new Chicken[5];
-
+        Chicken[] chickens = new Chicken[2];
 
         for (int i = 0; i < chickens.length; i++) {
-            System.out.println("[CHICKEN #" + (i+1) + "]");
+            System.out.println("[CHICKEN #" + (i + 1) + "]");
 
             Chicken newChicken = createChicken();
+
+            System.out.println(newChicken.toString());
+            newChicken.setId(99);
+            System.out.println("Chicken with different ID: " + newChicken.toString());
 
             allChickens[allChickensIndex] = newChicken;
             allChickensIndex++;
@@ -95,7 +99,8 @@ public class ChickenFarmSystem {
         int otherChickenId;
         while (true) {
             System.out.println("Please enter the chicken ID: ");
-            otherChickenId = consoleInput.nextInt(); consoleInput.nextLine();
+            otherChickenId = consoleInput.nextInt();
+            consoleInput.nextLine();
             if (isIdFree(otherChickenId)) {
                 break;
             } else {
@@ -110,10 +115,12 @@ public class ChickenFarmSystem {
         final String otherChickenColor = consoleInput.nextLine();
 
         System.out.println("Please enter the chicken age: ");
-        final int otherChickenAge = consoleInput.nextInt(); consoleInput.nextLine();
+        final int otherChickenAge = consoleInput.nextInt();
+        consoleInput.nextLine();
 
         System.out.println("Is this chicken molting? (true/false): ");
-        final boolean otherChickenIsMolting = consoleInput.nextBoolean(); consoleInput.nextLine();
+        final boolean otherChickenIsMolting = consoleInput.nextBoolean();
+        consoleInput.nextLine();
 
         return new Chicken(otherChickenId, otherChickenName, otherChickenColor, otherChickenAge, otherChickenIsMolting);
     }

@@ -17,7 +17,7 @@ public class Chicken {
 
     @Override
     public String toString() {
-        return "Chicken{" + "id=" + this.id + ", name=" + this.name + ", color=" + this.color + ", age=" + this.age + ", isMolting=" + this.isMolting + "}";
+        return this.id + "," + this.name + "," + this.color + "," + this.age + "," + this.isMolting;
     }
 
     public int getId() {
@@ -38,5 +38,25 @@ public class Chicken {
 
     public boolean isMolting() {
         return isMolting;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setMolting(boolean isMolting) {
+        this.isMolting = isMolting;
     }
 }
