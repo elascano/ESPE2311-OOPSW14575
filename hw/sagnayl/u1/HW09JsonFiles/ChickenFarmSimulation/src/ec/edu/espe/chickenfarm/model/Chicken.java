@@ -8,20 +8,24 @@ public class Chicken {
     private int id;
     private String name;
     private String color;
-    private int age;
+    private int days;
+    private int months;
+    private int years;
     private boolean isMolting;
 
-    @Override
-    public String toString() {
-        return "Chicken{" + "id=" + getId() + ", name=" + getName() + ", color=" + getColor() + ", age=" + getAge() + ", isMolting=" + isIsMolting() + '}';
-    }
-
-    public Chicken(int id, String name, String color, int age, boolean isMolting) {
+    public Chicken(int id, String name, String color, int days, int months, int years, boolean isMolting) {
         this.id = id;
         this.name = name;
         this.color = color;
-        this.age = age;
+        this.days = days;
+        this.months = months;
+        this.years = years;
         this.isMolting = isMolting;
+    }
+
+  
+    public String toCSVString() {
+        return getId() + "," + getName() + "," + getColor() + "," + getDays()+ "," + getMonths()+ "," + getYears() + "," + isIsMolting();
     }
 
     /**
@@ -67,17 +71,45 @@ public class Chicken {
     }
 
     /**
-     * @return the age
+     * @return the days
      */
-    public int getAge() {
-        return age;
+    public int getDays() {
+        return days;
     }
 
     /**
-     * @param age the age to set
+     * @param days the days to set
      */
-    public void setAge(int age) {
-        this.age = age;
+    public void setDays(int days) {
+        this.days = days;
+    }
+
+    /**
+     * @return the months
+     */
+    public int getMonths() {
+        return months;
+    }
+
+    /**
+     * @param months the months to set
+     */
+    public void setMonths(int months) {
+        this.months = months;
+    }
+
+    /**
+     * @return the years
+     */
+    public int getYears() {
+        return years;
+    }
+
+    /**
+     * @param years the years to set
+     */
+    public void setYears(int years) {
+        this.years = years;
     }
 
     /**
@@ -93,6 +125,4 @@ public class Chicken {
     public void setIsMolting(boolean isMolting) {
         this.isMolting = isMolting;
     }
-    
-    
 }
