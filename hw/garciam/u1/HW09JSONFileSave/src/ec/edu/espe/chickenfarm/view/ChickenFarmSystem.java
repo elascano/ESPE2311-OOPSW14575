@@ -42,7 +42,7 @@ public class ChickenFarmSystem {
                     chickens.clear();
                     chickens = fileHanlder.readChickenList("./chickens.json");
                     int idToUse = (chickens.get(chickens.size()-1).getId() +1);
-                    chickens.add(generateChickenByUserData(1));
+                    chickens.add(generateChickenByUserData(idToUse));
                     fileHanlder.saveJSONFile((ArrayList<Chicken>) chickens, "./chickens.json");
 
                     //fileHanlder.saveCSVFile(chikenToAdd, "./chickens.csv");
