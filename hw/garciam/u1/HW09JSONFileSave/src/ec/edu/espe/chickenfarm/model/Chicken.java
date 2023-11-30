@@ -1,5 +1,7 @@
 package ec.edu.espe.chickenfarm.model;
 
+import ec.edu.espe.chickenfarm.utils.DateHandler;
+
 import com.google.gson.Gson;
 
 /**

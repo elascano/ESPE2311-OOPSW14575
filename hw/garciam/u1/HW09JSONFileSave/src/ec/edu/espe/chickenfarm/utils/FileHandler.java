@@ -1,7 +1,17 @@
-package ec.edu.espe.chickenfarm.model;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ec.edu.espe.chickenfarm.utils;
+
+/**
+ *
+ * @author mateo
+ */
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import ec.edu.espe.chickenfarm.model.Chicken;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -116,3 +126,4 @@ public class FileHandler {
     
 
 }
+
