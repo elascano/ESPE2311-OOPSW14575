@@ -1,2 +1,6 @@
 ID,Name,Color,Birthday,Age,Is Molting
-1,Mateo,Yellow,2021-12-02,1,true
+1,Mateo,Yellow,2021-12-04,1,false
+2,Alan,Red,2020-05-14,3,false
+3,Paty,Blue,2021-12-23,1,false
+4,Marco,Black,2021-06-30,2,false
+5,Juan,white,2021-09-13,2,true
