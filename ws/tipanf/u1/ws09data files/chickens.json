@@ -1,0 +1,7 @@
+{"chickens":[
+   {"id":1,"name":"Lucy","color":"white","age":1,"isMolting":true},
+   {"id":2,"name":"Martha","color":"black","age":2,"isMolting":true},
+   {"id":3,"name":"Claudia","color":"brown","age":1,"isMolting":false},
+   {"id":4,"name":"Monica","color":"yellow","age":3,"isMolting":true},
+   {"id":5,"name":"Veronica","color":"gray","age":4,"isMolting":false}
+]}

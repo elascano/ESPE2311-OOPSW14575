@@ -1,0 +1,9 @@
+<chickens>
+ <Chicken>
+   <id>1</id>
+   <name>Lucy</name>
+   <color>white</color>
+   <age>10</age>
+   <isMolting>true</isMolting>
+ </Chicken>
+</chickens>
