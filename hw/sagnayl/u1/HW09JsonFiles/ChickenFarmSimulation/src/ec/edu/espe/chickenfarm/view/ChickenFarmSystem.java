@@ -1,5 +1,6 @@
 package ec.edu.espe.chickenfarm.view;
 
+import com.google.gson.Gson;
 import ec.edu.espe.chickenfarm.model.Chicken;
 //import ec.edu.espe.chickenfarm.model.Egg;
 //import ec.edu.espe.chickenfarm.model.Poop;
