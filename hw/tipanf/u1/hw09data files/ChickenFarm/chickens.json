@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Lucy",
+    "color": "brown",
+    "birthDate": {
+      "day": 1,
+      "month": 4,
+      "year": 2022
+    },
+    "age": 1,
+    "isMolting": false
+  },
+  {
+    "id": 2,
+    "name": "Martha",
+    "color": "white",
+    "birthDate": {
+      "day": 23,
+      "month": 5,
+      "year": 2022
+    },
+    "age": 1,
+    "isMolting": true
+  },
+  {
+    "id": 3,
+    "name": "Elva",
+    "color": "brown",
+    "birthDate": {
+      "day": 19,
+      "month": 9,
+      "year": 2022
+    },
+    "age": 1,
+    "isMolting": false
+  },
+  {
+    "id": 4,
+    "name": "Claudia",
+    "color": "black",
+    "birthDate": {
+      "day": 5,
+      "month": 8,
+      "year": 2021
+    },
+    "age": 2,
+    "isMolting": true
+  },
+  {
+    "id": 5,
+    "name": "Jissele",
+    "color": "brown",
+    "birthDate": {
+      "day": 4,
+      "month": 3,
+      "year": 2021
+    },
+    "age": 2,
+    "isMolting": true
+  }
+]

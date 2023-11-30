@@ -1,0 +1,17 @@
+﻿id;name;color;day;month;year;age;ismolting
+1;Lucy;black;3;4;2004;1;false
+2;Lily;brown;12;3;2004;2;true
+3;Sophia;black;15;5;2004;1;false
+4;Abigail;brown;19;6;2004;2;false
+5;Charlotte;black;4;7;2004;3;true
+6;Amelia;black;3;8;2004;3;true
+7;Emily;brown;9;10;2004;2;false
+8;Chiara;white;7;1;2004;1;true
+9;Anna;black;13;6;2004;3;false
+10;Marie;white;11;9;2004;1;true
+11;Diya;black;25;8;2004;2;false
+12;Madison;black;20;3;2004;2;false
+13;Isidora;black;15;5;2004;1;false
+14;Elif;brown;10;7;2004;3;false
+15;Irem;white;14;9;2004;1;false
+16;pablo;brown;1;4;2022;1;true
