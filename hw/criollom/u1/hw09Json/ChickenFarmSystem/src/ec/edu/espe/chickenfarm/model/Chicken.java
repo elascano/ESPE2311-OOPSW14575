@@ -9,6 +9,10 @@ import java.time.Period;
  * @author MateoCriollo,InterByte,DCCO-ESPE
  */
 public class Chicken {
+
+    public static int length() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     private int id;
     private String name;
     private String color;
