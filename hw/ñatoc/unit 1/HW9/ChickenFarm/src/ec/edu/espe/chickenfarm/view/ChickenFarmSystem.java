@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 
-
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import java.util.Scanner;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -20,6 +21,7 @@ public class ChickenFarmSystem {
   
     private static ArrayList<Chicken> allChickens = new ArrayList<>();
     private static final String SAVE_FILE_NAME = "chickens.csv";
+    private static final String SAVE_FILE_NAME_JSON = "chickens.json";
     
     public static void main(String[] args){
         Poop poop = new Poop();
@@ -42,6 +44,8 @@ public class ChickenFarmSystem {
         }
         
        saveChickensToCSV(allChickens);
+       saveChickensToJSON(allChickens);
+       
         
        
         
@@ -82,6 +86,7 @@ public class ChickenFarmSystem {
             boolean isMolting = scanner.nextBoolean();
         //Error Age
             chickens [i] = new Chicken(id, name, color,id, isMolting);
+            allChickens.add(chickens[i]);
         }
         return chickens;
     }
@@ -144,19 +149,17 @@ public class ChickenFarmSystem {
         }
     }
          
-    
-  
+private static void saveChickensToJSON(ArrayList<Chicken> chickens) {
+        try (FileWriter writer = new FileWriter(SAVE_FILE_NAME_JSON)) {
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            String json = gson.toJson(chickens);
+            writer.write(json);
+
+            System.out.println("Chickens data saved to JSON file: " + SAVE_FILE_NAME_JSON);
+
+        } catch (IOException e) {
+            System.err.println("Error writing to JSON file: " + e.getMessage());
+        }
+    }    
+          
 }
-
-
-
- 
-
-
-
-
-
-
-    
-
-

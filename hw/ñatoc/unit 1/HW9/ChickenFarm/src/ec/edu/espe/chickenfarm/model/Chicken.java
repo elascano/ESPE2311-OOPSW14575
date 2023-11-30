@@ -1,6 +1,6 @@
 
 package ec.edu.espe.chickenfarm.model;
-import java.util.Calendar;
+import com.google.gson.annotations.SerializedName;
 /**
  *
  * @author CarlosÑato,Error 404,DCCO-ESPE
@@ -18,7 +18,7 @@ public class Chicken {
     }
     
      public String toCSVString() {
-        return id + "," + name + "," + color + "," + age + "," + isMolting;
+        return id + ";" + name + ";" + color + ";" + age + ";" + isMolting;
     }
 
     public Chicken(int id, String name, String color, int age, boolean isMolting) {
