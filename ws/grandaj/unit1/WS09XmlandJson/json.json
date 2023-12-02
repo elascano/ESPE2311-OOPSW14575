@@ -1,0 +1,15 @@
+{ "chicken" : [{
+"id" : "1", "name" : "Juan", "color" : "green", "age" : "3"},{
+"id" : "213", "name" : "Jose", "color" : "white", "age" : "8"},{
+"id" : "34", "name" : "Jhon", "color" : "red", "age" : "7"},{
+"id" : "55", "name" : "Marcos", "color" : "black", "age" : "1"},{
+"id" : "78", "name" : "Jose", "color" : "yellow", "age" : "9"}]
+
+{
+
+
+
+
+
+
+
