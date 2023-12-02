@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "name": "Lucy",
+  "color": "Black\u0026White",
+  "birthDate": "2021-10-19",
+  "isMolting": true
+}
+{
+  "id": 2,
+  "name": "Yui",
+  "color": "Black",
+  "birthDate": "2018-12-18",
+  "isMolting": false
+}
+{
+  "id": 3,
+  "name": "Hilda",
+  "color": "Brown",
+  "birthDate": "2020-06-23",
+  "isMolting": true
+}
+{
+  "id": 4,
+  "name": "Nami",
+  "color": "Black",
+  "birthDate": "2019-12-15",
+  "isMolting": false
+}
+{
+  "id": 5,
+  "name": "Paula",
+  "color": "White",
+  "birthDate": "2021-04-13",
+  "isMolting": true
+}
