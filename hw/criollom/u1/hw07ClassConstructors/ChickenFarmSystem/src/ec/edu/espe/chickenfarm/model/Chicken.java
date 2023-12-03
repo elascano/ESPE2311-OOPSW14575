@@ -25,7 +25,13 @@ public class Chicken {
         this.isMolting = isMolting;
     }
     
+    public void seIid(int id){
+        this.id=id;
+    }
     
+    public int getId(){
+        return id;
+    }
 }
 
 
