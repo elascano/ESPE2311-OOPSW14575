@@ -1,0 +1,44 @@
+{ "1":{
+  "name": "Lucy",
+  "color": "Brown",
+  "age": 19,
+  "isMolting": true,
+  "BornOnDay": 24,
+  "BornOnMonth": 6,
+  "BornOnYear": 2004
+}, "2":{
+  "name": "Mishell",
+  "color": "White",
+  "age": 19,
+  "isMolting": false,
+  "BornOnDay": 22,
+  "BornOnMonth": 4,
+  "BornOnYear": 2004
+}, "3":{
+  "name": "Bryan",
+  "color": "Brown",
+  "age": 21,
+  "isMolting": true,
+  "BornOnDay": 6,
+  "BornOnMonth": 1,
+  "BornOnYear": 2002
+}, "4":{
+  "name": "Edison",
+  "color": "Brown",
+  "age": 53,
+  "isMolting": false,
+  "BornOnDay": 18,
+  "BornOnMonth": 11,
+  "BornOnYear": 1970
+}, "5":{
+  "name": "Mateo",
+  "color": "Black",
+  "age": 1,
+  "isMolting": false,
+  "BornOnDay": 30,
+  "BornOnMonth": 1,
+  "BornOnYear": 2022
+}
+
+
+}
