@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "deathYear": -2800000000,
+        "phylum": "Chordata",
+        "species": "Tyrannosaurus Rex"
+    },
+    {
+        "id": 2,
+        "deathYear": -2500000000,
+        "phylum": "Chordata",
+        "species": "Triceratops"
+    },
+    {
+        "id": 3,
+        "deathYear": -3000000000,
+        "phylum": "Chordata",
+        "species": "Stegosaurus"
+    },
+    {
+        "id": 4,
+        "deathYear": -2500000000,
+        "phylum": "Chordata",
+        "species": "Velociraptor"
+    },
+    {
+        "id": 5,
+        "deathYear": -2500000000,
+        "phylum": "Chordata",
+        "species": "Brachiosaurus"
+    }
+]
