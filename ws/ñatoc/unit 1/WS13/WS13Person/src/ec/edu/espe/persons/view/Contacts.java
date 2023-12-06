@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class Contacts {
     public static void main(String[] args) {
-        Collection things;
+               Collection things;
         things = new ArrayList();
         System.out.println("size at the beginnning" + things.size());
        
@@ -28,7 +28,7 @@ public class Contacts {
         
         System.out.println("New person");
    //EMPLO     
-        Persons myself = new Persons(1, "Carlos", "Caiza",null); 
+
         
         things.add(myself);
         System.out.println(things);
@@ -41,7 +41,8 @@ public class Contacts {
         
         for(int i = 0; i<5; i++){
             
-            persons.add(new Persons((i+1),"Carlos" + (i+1), "Ñato", new Date()));
+
+        
         }
         
         for(Persons personIndex : persons){
@@ -51,12 +52,10 @@ public class Contacts {
         System.out.println(persons.size());
         
         
-                
-        
-        
-        
-        
+    }
+    
+   
         
     }
     
-}
+
