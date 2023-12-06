@@ -20,6 +20,7 @@ public class ChickenFarmSystem {
         
         Poop poop = new Poop();
         Egg egg = new Egg();
+        Chicken chicken = new Chicken(1, "Lucy", "Black&White", 2, true);
         Chicken chickens[] = new Chicken[5];
         
         Scanner sc = new Scanner(System.in);
@@ -46,5 +47,10 @@ public class ChickenFarmSystem {
         for (int i=0; i<5; i++) {
             System.out.println("Chicken "+ (i+1) + "--> " +chickens[i]);
         }
+        chicken.setId(9);
+        System.out.println("New Chicken id --> " + chicken.getId());
+        System.out.println("New Chicken name --> " + chicken.getName());
+        System.out.println("Chicken --> " + chicken);
     }
 }
+  

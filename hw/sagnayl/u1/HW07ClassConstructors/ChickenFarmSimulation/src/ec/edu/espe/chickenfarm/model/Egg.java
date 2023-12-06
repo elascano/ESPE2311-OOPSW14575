@@ -6,4 +6,25 @@ package ec.edu.espe.chickenfarm.model;
  */
 public class Egg {
     private int id;
+
+    @Override
+    public String toString() {
+        return "Egg{" + "id=" + getId() + '}';
+    }
+
+    /**
+     * @return the id
+     */
+    public int getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(int id) {
+        this.id = id;
+    }
+    
+    
 }

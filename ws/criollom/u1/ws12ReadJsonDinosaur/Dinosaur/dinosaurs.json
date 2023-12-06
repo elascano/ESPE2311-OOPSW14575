@@ -1,0 +1,20 @@
+[
+  {
+    "Alimentation": "Herbivoro",
+    "name": "Mateo",
+    "Height": "15",
+    "id": 0
+  },
+  {
+    "Alimentation": "Carnivoro",
+    "name": "ALAN",
+    "Height": "45",
+    "id": 1
+  },
+  {
+    "Alimentation": "Omnivoro",
+    "name": "Marco",
+    "Height": "45",
+    "id": 2
+  }
+]
