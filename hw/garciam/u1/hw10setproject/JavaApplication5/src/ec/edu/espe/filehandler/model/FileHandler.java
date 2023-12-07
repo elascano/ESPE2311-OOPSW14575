@@ -1,13 +1,9 @@
 
-package ec.edu.espe.chickenfarm.utils;
+package ec.edu.espe.filehandler.model;
 
-/**
- *
- * @author mateo
- */
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import ec.edu.espe.chickenfarm.model.Chicken;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -21,9 +17,9 @@ import java.util.List;
  *
  * @author mateo
  */
-public class FileHandler<objectAdapater> {
+public class FileHandler {
 
-    List<objectAdapater> chickens = new ArrayList<>();
+    List<Object> chickens = new ArrayList<>();
 
     public static void printCSVFile(String path) {
         try (BufferedReader _buffer = new BufferedReader(new FileReader(path))) {
@@ -37,30 +33,9 @@ public class FileHandler<objectAdapater> {
         }
     }
 
-    public static int getLastId(String path) {
-        int lastId = 0;
-        try (BufferedReader _buffer = new BufferedReader(new FileReader(path))) {
-            String line;
-            while ((line = _buffer.readLine()) != null) {
-                String[] data = line.split(",");
-                lastId = Integer.parseInt(data[0]);
-            }
-        } catch (IOException e) {
-            System.err.println("[-] Something went wrong: " + e.getMessage());
-        }
-        return (lastId + 1);
-    }
 
-    public void saveCSVFile(objectAdapater object0, String path) {
-        try (FileWriter writer = new FileWriter(path, true)) {
-            writer.write(object0.toString());
-            System.out.println("[+]Data Saved Succesfully.");
-        } catch (IOException e) {
-            System.err.println("[-] Something went wrong: " + e.getMessage());
-        }
-    }
 
-    public void readJSONFile(String path) {
+    public static void readJSONFile(String path) {
         String file = "";
 
         try (BufferedReader _buffer = new BufferedReader(new FileReader(path))) {
@@ -73,18 +48,17 @@ public class FileHandler<objectAdapater> {
             System.err.println("[-] Something went wrong: " + e.getMessage());
         }
         System.out.println(file);
-                Type listType = new TypeToken<ArrayList<objectAdapater>>() {}.getType();        
-        objectAdapater chicken = new Gson().fromJson(file, listType);
-        System.out.println(chicken);
+        Gson gson = new Gson();
+        Object objectElement = gson.fromJson(file, Object.class);
+                System.out.println(objectElement);
 
     }
-
-    public List<objectAdapater> readChickenList(String path) {
-        List<objectAdapater> listaPersonas = new ArrayList<>();
+    
+        public static List<Object> readList(String path) {
+        List<Object> listaPersonas = new ArrayList<>();
 
         try (Reader reader = new FileReader(path)) {
-            Type listType = new TypeToken<ArrayList<objectAdapater>>() {
-            }.getType();
+            Type listType = new TypeToken<ArrayList<Object>>(){}.getType();
             listaPersonas = new Gson().fromJson(reader, listType);
         } catch (IOException e) {
             e.printStackTrace();
@@ -93,7 +67,7 @@ public class FileHandler<objectAdapater> {
         return listaPersonas;
     }
 
-    public objectAdapater updateJSONInfo(String path) {
+    public static Object updateJSONInfo(String path) {
         String file = "";
 
         try (BufferedReader _buffer = new BufferedReader(new FileReader(path))) {
@@ -107,22 +81,20 @@ public class FileHandler<objectAdapater> {
         }
         System.out.println(file);
         Gson gson = new Gson();
-        Type listType = new TypeToken<ArrayList<objectAdapater>>() {}.getType();
-
-        return gson.fromJson(file, listType);
+        return gson.fromJson(file, Object.class);
     }
 
-    public void saveJSONFile(ArrayList<objectAdapater> chikens, String path) {
+    public static void saveJSONFile(ArrayList<Object> objectArray, String path) {
         Gson gson = new Gson();
         try (FileWriter writer = new FileWriter(path)) {
-            writer.write(gson.toJson(chikens));
+            writer.write(gson.toJson(objectArray));
             System.out.println("[+]Data Saved Succesfully.");
         } catch (IOException e) {
             System.err.println("[-] Something went wrong: " + e.getMessage());
         }
     }
+    
+    
 
 }
-
-
 
