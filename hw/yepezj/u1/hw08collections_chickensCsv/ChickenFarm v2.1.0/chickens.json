@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Lucy",
+    "color": "brown",
+    "age": 1,
+    "isMolting": false,
+    "bornOnDay": 0,
+    "bornOnMonth": 0,
+    "bornOnYear": 0
+  },
+  {
+    "id": 2,
+    "name": "Martha",
+    "color": "white",
+    "age": 1,
+    "isMolting": true,
+    "bornOnDay": 0,
+    "bornOnMonth": 0,
+    "bornOnYear": 0
+  },
+  {
+    "id": 3,
+    "name": "Elva",
+    "color": "brown",
+    "age": 1,
+    "isMolting": false,
+    "bornOnDay": 0,
+    "bornOnMonth": 0,
+    "bornOnYear": 0
+  },
+  {
+    "id": 4,
+    "name": "Claudia",
+    "color": "black",
+    "age": 2,
+    "isMolting": true,
+    "bornOnDay": 0,
+    "bornOnMonth": 0,
+    "bornOnYear": 0
+  },
+  {
+    "id": 5,
+    "name": "Jissele",
+    "color": "brown",
+    "age": 2,
+    "isMolting": true,
+    "bornOnDay": 0,
+    "bornOnMonth": 0,
+    "bornOnYear": 0
+  },
+  {
+    "id": 2,
+    "name": "sfafas",
+    "color": "fasfaf",
+    "age": 2021,
+    "isMolting": true,
+    "bornOnDay": 0,
+    "bornOnMonth": 0,
+    "bornOnYear": 0
+  },
+  {
+    "id": 7,
+    "name": "Bryan",
+    "color": "White",
+    "age": 19,
+    "isMolting": true,
+    "bornOnDay": 0,
+    "bornOnMonth": 0,
+    "bornOnYear": 0
+  },
+  {
+    "id": 8,
+    "name": "Jefferson",
+    "color": "White",
+    "age": 19,
+    "isMolting": true,
+    "bornOnDay": 25,
+    "bornOnMonth": 6,
+    "bornOnYear": 2004
+  }
+]

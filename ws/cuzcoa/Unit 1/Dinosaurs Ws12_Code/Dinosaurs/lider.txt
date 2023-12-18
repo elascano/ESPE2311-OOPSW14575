@@ -1,0 +1,4 @@
+{"id":1,"name":"Tyrannosaurus Rex","age":"Adult","size":"Big"}
+{"id":2,"name":"Triceratops","age":"Young","size":"Medium"}
+{"id":3,"name":"Velociraptor","age":"Young","size":"little"}
+{"id":4,"name":"Velociraptor","age":"Young","size":"little"}

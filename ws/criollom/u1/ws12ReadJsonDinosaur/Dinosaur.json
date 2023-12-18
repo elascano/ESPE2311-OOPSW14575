@@ -1,0 +1,19 @@
+{
+  "Dinosaurs": [
+    {
+      "name": "Tyrannosaurus",
+      "height": "20 feet",
+      "alimentation": "Carnivore"
+    },
+    {
+      "name": "Triceratops",
+      "height": "12 feet",
+      "alimentation": "Herbivore"
+    },
+    {
+      "name": "Triceratops",
+      "height": "12 feet",
+      "alimentation": "Herbivore"
+    },
+  ]
+}
