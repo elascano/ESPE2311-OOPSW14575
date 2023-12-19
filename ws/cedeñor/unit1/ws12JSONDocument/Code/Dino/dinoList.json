@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "dinos": [
+    {
+      "id": 12,
+      "name": "Robin",
+      "color": "Green",
+      "age": 3
+    },
+    {
+      "id": 13,
+      "name": "Raul",
+      "color": "Blue",
+      "age": 2
+    },
+    {
+      "id": 14,
+      "name": "Mario",
+      "color": "Black",
+      "age": 4
+    }
+  ]
+}
