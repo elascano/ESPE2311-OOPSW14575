@@ -1,0 +1,17 @@
+{
+    "1":{
+        "name": "Juan",
+        "age": 3,
+        "heigth": 1.5
+    },
+    "2":{
+        "name": "Felipe",
+        "age": 5,
+        "heigth": 5
+    },
+    "3":{
+        "name": "Edison",
+        "age": 2,
+        "heigth": 2
+    }
+}

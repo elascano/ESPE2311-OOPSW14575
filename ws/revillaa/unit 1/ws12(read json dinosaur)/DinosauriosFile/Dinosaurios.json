@@ -1,0 +1,6 @@
+[
+    {"id": 25, "name": "TiRex", "color": "Brown", "size": 5},
+    {"id": 89, "name": "Velociraptor", "color": "Green", "size": 3},
+    {"id": 10, "name": "Triceratop", "color": "Brown", "size": 3},
+    {"id": 3, "name": "Tyrannosaurus", "color": "Gray", "size": 4}
+]
