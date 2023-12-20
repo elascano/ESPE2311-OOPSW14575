@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "chickens": [
+    {
+      "id": 15,
+      "name": "ronin",
+      "color": "blue",
+      "age": 20,
+      "isMolting": true,
+      "bornOnDate": "Oct 26, 2003, 12:00:00 AM"
+    }
+  ]
+}
