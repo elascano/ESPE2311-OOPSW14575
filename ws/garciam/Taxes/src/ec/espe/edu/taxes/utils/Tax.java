@@ -18,7 +18,7 @@ public class Tax {
     public Tax(float earning, String typeEarning, String typeSalaried) {
         float socialSecurityPorcent = (!typeSalaried.equals("public"))?0.0945f : 0.1145f;
         this.annualEarning = (!typeEarning.equals("annual")) ?  earning * 12 : earning;
-        this.annualEarning -= (this.annualEarning* 0.1145);
+        this.annualEarning -= (this.annualEarning* socialSecurityPorcent);
     }
 
     @Override
