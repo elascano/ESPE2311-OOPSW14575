@@ -1,0 +1,18 @@
+[
+  {
+    "name": "table",
+    "weight": 10
+  },
+  {
+    "name": "chair",
+    "weight": 20
+  },
+  {
+    "name": "bed",
+    "weight": 52
+  },
+  {
+    "name": "libreria",
+    "weight": 62
+  }
+]
