@@ -1,0 +1,21 @@
+{   
+"Dinosaur":[{
+    "name" : "T-REX",
+    "id" : "1500" ,
+    "color" : "Green",
+    "age" : "10"
+  },
+
+  { "name" : "Megadolon",
+    "id" : "3000" ,
+    "color" : "brow",
+    "age" : "20 "
+  },
+
+  { "name" : "Coritosaurio",
+    "id" : "2500" ,
+    "color" : "Green",
+    "age" : "4 "
+  }
+]
+}

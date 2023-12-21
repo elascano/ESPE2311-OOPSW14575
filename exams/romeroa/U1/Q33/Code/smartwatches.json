@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "brand": "Samsung",
+        "modelName": "Smartband 2023",
+        "color": "Black",
+        "price": 200.5
+    },
+    {
+        "id": 2,
+        "brand": "Xiaomi",
+        "modelName": "Fitband M71",
+        "color": "Blue",
+        "price": 185.0
+    },
+    {
+        "id": 3,
+        "brand": "Rolex",
+        "modelName": "Sportive Premium XII",
+        "color": "Gold",
+        "price": 555.75
+    },
+    {
+        "id": 4,
+        "brand": "Huawei",
+        "modelName": "Smartfit 2023 v2",
+        "color": "Green",
+        "price": 145.5
+    },
+    {
+        "id": 5,
+        "brand": "Casio",
+        "modelName": "Pique-192",
+        "color": "Grey",
+        "price": 99.99
+    }
+]

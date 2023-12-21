@@ -1,0 +1,24 @@
+{
+    "Dinosaurio": [
+      {
+        "Color": "Negro",
+        "name": "T-rex",
+        "height": "15",
+        "id": 14
+      },
+      {
+        "Color": "Verde",
+        "name": "Velociraptor",
+        "height": "5",
+        "id": 27
+      },
+      {
+        "Color": "Gris",
+        "name": "Triceratops",
+        "height": "8",
+        "id": 19
+      }
+
+    ]
+  }
+  

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "sizeInMeters": 43,
+    "mainStreet": "Bolivar"
+  },
+  {
+    "id": 2,
+    "sizeInMeters": 76,
+    "mainStreet": "Trebol"
+  },
+  {
+    "id": 3,
+    "sizeInMeters": 98,
+    "mainStreet": "Garcia"
+  },
+  {
+    "id": 4,
+    "sizeInMeters": 76,
+    "mainStreet": "Sangay"
+  },
+  {
+    "id": 5,
+    "sizeInMeters": 32,
+    "mainStreet": "Moreno"
+  }
+]
