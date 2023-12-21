@@ -1,0 +1,11 @@
+[
+	{
+		"id":1,"height":15,"weight":30,"isFighting":false
+	},
+	{
+		"id":2,"height":17,"weight":50,"isFighting":true
+	},
+	{
+		"id":3,"height":20,"weight":80,"isFighting":false
+	}
+]

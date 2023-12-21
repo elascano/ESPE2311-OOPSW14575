@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "barcelona",
+    "color": "yellow"
+  },
+  {
+    "id": 3,
+    "name": "guayaquil city",
+    "color": "blue"
+  },
+  {
+    "id": 4,
+    "name": "mushuc runa",
+    "color": "white"
+  },
+  {
+    "id": 2,
+    "name": "liga de quito",
+    "color": "red"
+  }
+]

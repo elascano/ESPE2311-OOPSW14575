@@ -1,0 +1,9 @@
+ChickenFarmSimulator$JsonWriter.class
+ChickenFarmSimulator$CsvWriter.class
+ChickenFarmSimulator$JsonReader.class
+ChickenFarmSimulator$AgeCalculator.class
+ChickenFarmSimulator$ChickenInput.class
+ec\edu\espe\chickenfarm\model\Chicken.class
+ec\edu\espe\chickenfarm\model\Poop.class
+ec\edu\espe\chickenfarm\model\Egg.class
+ChickenFarmSimulator.class
