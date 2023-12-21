@@ -3,7 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/Users/cotbert/Documents/univerity/oop/ESPE2311-OOPSW14575/hw/garciam/u1/HW09JSONFileSave/src/ec/edu/espe/chickenfarm/model/Chicken.java</file>
+=======
+            <file>file:/Users/cotbert/Documents/univerity/oop/ESPE2311-OOPSW14575/hw/garciam/u1/HW09JSONFileSave/src/ec/edu/espe/chickenfarm/view/ChickenFarmSystem.java</file>
+            <file>file:/Users/cotbert/Documents/univerity/oop/ESPE2311-OOPSW14575/hw/garciam/u1/HW09JSONFileSave/src/ec/edu/espe/chickenfarm/model/Chicken.java</file>
+            <file>file:/Users/cotbert/Documents/univerity/oop/ESPE2311-OOPSW14575/hw/garciam/u1/HW09JSONFileSave/src/ec/edu/espe/chickenfarm/model/Egg.java</file>
+>>>>>>> 7ad623e1c914bfdcb885f888488936540dbfba3f
             <file>file:/Users/cotbert/Documents/univerity/oop/ESPE2311-OOPSW14575/hw/garciam/u1/HW09JSONFileSave/src/ec/edu/espe/chickenfarm/utils/DateHandler.java</file>
             <file>file:/Users/cotbert/Documents/univerity/oop/ESPE2311-OOPSW14575/hw/garciam/u1/HW09JSONFileSave/src/ec/edu/espe/chickenfarm/utils/FileHandler.java</file>
         </group>

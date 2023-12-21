@@ -1,0 +1,9 @@
+{
+	"id":1,
+	"name":"Edison",
+	"parents":[
+		{"id":1,"name":""},
+		{"id":2,"name":"Isabel"}
+	],
+    "isStuding":false
+}
