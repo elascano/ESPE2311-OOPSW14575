@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Lily",
+    "color": "Yellow",
+    "birthDate": {
+      "day": 21,
+      "month": 2,
+      "year": 2020
+    },
+    "age": 3,
+    "isMolting": true
+  },
+  {
+    "id": 1,
+    "name": "Liliana",
+    "color": "Red",
+    "birthDate": {
+      "day": 21,
+      "month": 3,
+      "year": 2018
+    },
+    "age": 5,
+    "isMolting": true
+  }
+]

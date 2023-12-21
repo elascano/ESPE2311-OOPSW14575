@@ -27,10 +27,16 @@ public class ChickenFarmSystem {
         List<Chicken> chickens = new ArrayList<>();
         List<Chicken> chickensReader = new ArrayList<>();
 
+<<<<<<< HEAD
         FileHandler fileHanlder = new FileHandler();
 
         int toUseId = 0;
         toUseId = fileHanlder.getLastId("./chickens.csv");
+=======
+        FileHandler fileHanlder = new FileHandler<Chicken>();
+
+        int toUseId = 0;
+>>>>>>> 7ad623e1c914bfdcb885f888488936540dbfba3f
 
         int opt = 0;
         System.out.println("*************************\n| Chicken Farm Simulator|\n*************************");

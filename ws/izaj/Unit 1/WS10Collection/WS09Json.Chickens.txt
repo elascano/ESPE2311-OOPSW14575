@@ -1,0 +1,7 @@
+{"Chicken": [
+{"id": "123", "name":"Juan", "Color": "Black", "age":"12", "IsMolting":"True"},
+{"id": "124", "name":"Mateo", "Color": "Black", "age":"05", "IsMolting":"True"},
+{"id": "125", "name":"Estefany", "Color": "white", "age":"11", "IsMolting":"False"},
+{"id": "125", "name":"Odalis, "Color": "Black", "age":"12", "IsMolting":"True"},
+{"id": "127", "name":"Hilda", "Color": "Black", "age":"12", "IsMolting":"True"}
+]}
