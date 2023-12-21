@@ -1,0 +1,16 @@
+{
+	"Parent": {
+		"id":1,
+		"name": "Edison",
+		"parents": [{
+		"Parent": {
+		"id":1
+		"name":" "
+		}
+		},
+		{"Parent": {
+		"id":2
+		"name":"Isabel"}
+		}],
+		"isStuding": false}
+		}
