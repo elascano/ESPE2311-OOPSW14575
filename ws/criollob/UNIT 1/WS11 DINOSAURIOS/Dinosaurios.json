@@ -1,0 +1,33 @@
+
+[
+    {
+        "id": "1",
+        "tipo": "Volador",
+        "alimentacion": "Carnívoro",
+        "nombre": "pterosaurios"
+    },
+    {
+        "id": "2",
+        "tipo": "Terrestre",
+        "alimentacion": "Herbívoro",
+        "nombre": "Triceratops"
+    },
+    {
+        "id": "3",
+        "tipo": "Volador",
+        "alimentacion": "Piscívoro",
+        "nombre": "Pteranodon"
+    },
+    {
+        "id": "4",
+        "tipo": "Acuático",
+        "alimentacion": "Carnívoro",
+        "nombre": "Mosasaurus"
+    },
+    {
+        "id": "5",
+        "tipo": "Terrestre",
+        "alimentacion": "Carnívoro",
+        "nombre": "Tyrannosaurus rex"
+    }
+]
