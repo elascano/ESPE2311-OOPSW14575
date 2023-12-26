@@ -24,9 +24,9 @@ public class Meeting {
     public String toString() {
         String meeting; 
         meeting= "Meeting{" + 
-                "id=" + getId() + 
-                ", title=" + getTitle() +
-                ", user= " + getUsers() +"}";
+                "id=" + id + 
+                ", title=" + title +
+                ", user= " + users +"}";
         
         return meeting;
     

@@ -14,7 +14,6 @@ public class DailyDevSystem {
     public static void main(String[] args) {
        User[] users = new User[3];
       
-       
        users[0]= new User(222, "Carlos Ñato", "carlos_izac8@hotmail.com");
        users[1]= new User(323, "Pedro Caiza", "pedroCaiza@gmail.com");
        users[2]= new User(223, "Luis Perez", "luis@gmail.com");
