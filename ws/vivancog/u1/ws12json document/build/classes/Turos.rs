@@ -1,0 +1,3 @@
+turos.Turos
+Dinosaurio
+DinosaurioManager

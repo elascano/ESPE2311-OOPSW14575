@@ -1,10 +1,19 @@
 [
   {
+<<<<<<< HEAD
     "name": "HOla",
     "weight": 18
   },
   {
     "name": "COMPUTA",
     "weight": 17
+=======
+    "name": "mesa",
+    "weight": 15
+  },
+  {
+    "name": "silla",
+    "weight": 13
+>>>>>>> eacf79ff2b843ec5911b54283a096934289e5529
   }
 ]
