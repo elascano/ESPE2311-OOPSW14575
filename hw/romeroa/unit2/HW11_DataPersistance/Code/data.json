@@ -1,0 +1,19 @@
+{
+  "firstName": "Pablo",
+  "lastName": "Carrera",
+  "age": 25,
+  "pets": [
+    {
+      "type": "dog",
+      "name": "Bruno",
+      "breed": "Huskee",
+      "age": 5
+    },
+    {
+      "type": "cat",
+      "name": "Max",
+      "color": "Brown",
+      "age": 2
+    }
+  ]
+}
