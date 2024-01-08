@@ -4,7 +4,6 @@ require_relative 'Tire'
 
 class Car
   attr_accessor :brand, :model, :color, :tires, :engine
-
   def initialize(brand, model, color, tires, engine)
     @brand = brand
     @model = model
@@ -40,5 +39,25 @@ class Car
     tires = data['tires'].map { |tire_data| Tire.new(tire_data['diameter'], tire_data['brand']) }
     engine = Engine.new(data['engine']['brand'])
     new(data['brand'], data['model'], data['color'], tires, engine)
+  end
+
+  def turn_off
+    puts "Car is turn off"
+  end
+
+  def speed_up
+    puts "Car is speed up"
+  end
+
+  def Start
+    puts "Car is ready"
+  end
+
+  def acelerate (speed)
+    puts "Car has a acceleration of #{speed}"
+  end
+
+  def brake
+    puts "Braking car"
   end
 end

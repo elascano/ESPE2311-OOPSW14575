@@ -11,5 +11,11 @@ class Tire
     "#{brand} - Diameter: #{diameter}"
   end
 
+  def inflate
+    puts "tire is inflated"
+  end
 
+  def deflate
+    puts "tire is deflate"
+  end
 end
