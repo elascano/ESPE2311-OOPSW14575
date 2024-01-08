@@ -1,0 +1,12 @@
+[
+  {
+    "Place": "Av amazonas",
+    "numberOfCars": 150,
+    "areYouThere": true
+  },
+  {
+    "Place": "Sangolqui",
+    "numberOfCars": 100,
+    "areYouThere": false
+  }
+]

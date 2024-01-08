@@ -1,0 +1,82 @@
+[
+  {
+    "id": 876,
+    "country": "Ecuador"
+  },
+  {
+    "id": 98,
+    "country": "UUEE"
+  }
+][
+  {
+    "id": 87,
+    "name": "carlos",
+    "country": "EEUU"
+  },
+  {
+    "id": 89,
+    "name": "Mesias",
+    "country": "Mexico"
+  }
+]{
+  "id": 87,
+  "name": "Carlos",
+  "country": "Ecuador"
+}
+{
+  "id": 89,
+  "name": "Martin",
+  "country": "USA"
+}
+{
+  "id": 98,
+  "name": "Milton",
+  "country": "Mexico"
+}
+{
+  "id": 67,
+  "name": "Juan",
+  "country": "Perú"
+}
+{
+  "id": 87,
+  "name": "Carlos",
+  "country": "Ecuador"
+}
+{
+  "id": 89,
+  "name": "Martin",
+  "country": "USA"
+}
+{
+  "id": 98,
+  "name": "Milton",
+  "country": "Mexico"
+}
+{
+  "id": 67,
+  "name": "Juan",
+  "country": "Perú"
+}
+[
+  {
+    "id": 87,
+    "name": "Carlos",
+    "country": "Ecuador"
+  },
+  {
+    "id": 89,
+    "name": "Martin",
+    "country": "USA"
+  },
+  {
+    "id": 98,
+    "name": "Milton",
+    "country": "Mexico"
+  },
+  {
+    "id": 67,
+    "name": "Juan",
+    "country": "Perú"
+  }
+]

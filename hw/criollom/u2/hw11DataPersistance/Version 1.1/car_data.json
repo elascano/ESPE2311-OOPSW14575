@@ -1,0 +1,6 @@
+{"brand":"Toyota","model":"Yaris","color":" blue",
+"tires":[{"diameter":45,"brand":" Continental"},
+{"diameter":42,"brand":" Continental"},
+{"diameter":43,"brand":" Continental"},
+{"diameter":41,"brand":"Hankook"}],
+"engine":{"brand":"Motor Wankel"}}
