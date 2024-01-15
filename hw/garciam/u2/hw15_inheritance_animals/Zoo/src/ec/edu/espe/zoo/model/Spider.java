@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ec.edu.espe.zoo.model;
 
 /**
@@ -9,5 +5,10 @@ package ec.edu.espe.zoo.model;
  * @author mateo
  */
 public class Spider {
+    private String type;
+    private float size;
     
+    public void spinWeb(){
+        System.out.println("Spider is spining web...");
+    }
 }
