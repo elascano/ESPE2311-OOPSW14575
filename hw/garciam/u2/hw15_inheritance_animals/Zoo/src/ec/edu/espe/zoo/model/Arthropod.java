@@ -21,6 +21,13 @@ public class Arthropod extends Invertebrate{
     
     
     public void shedSkin(){
-    
+        System.out.println("Animal is sheding skin...");
     }
+
+    @Override
+    public String toString() {
+        return "Arthropod{" + super.toString() +  "legsNumber=" + legsNumber + ", hasVenom=" + hasVenom + ", exoskeleton=" + exoskeleton + '}';
+    }
+    
+    
 }

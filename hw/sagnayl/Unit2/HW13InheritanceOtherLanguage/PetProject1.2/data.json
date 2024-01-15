@@ -1,0 +1,13 @@
+{
+  "firstName": "Carlos",
+  "lastName": "Perez",
+  "age": 40,
+  "pets": [
+    {
+      "type": "dog",
+      "name": "Rex",
+      "breed": "Bulldog",
+      "age": 2
+    }
+  ]
+}

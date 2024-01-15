@@ -9,6 +9,11 @@ import java.util.Date;
  */
 public class Mammal extends Vertebrate{
     private int numberOfdMammaryGlands;
+    
+    public void breastfeed(){
+            System.out.println("breastfeed baby 1");
+        
+    }
 
     public Mammal(int numberOfdMammaryGlands, String spine, int numberOfBones, int id, String scientificName, Date bornDate, int cageId) {
         super(spine, numberOfBones, id, scientificName, bornDate, cageId);
