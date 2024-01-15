@@ -9,14 +9,11 @@ import java.util.Date;
  */
 public class Zoo {
     public static void main(String[] args) {
-        Animal animal = new Animal(0, "platypus", new Date(),1);
-        System.out.println("Animal -->" + animal);
-        System.out.println("animaltype" + animal.getClass());
+        System.out.println("Zoo Mateo García");
+        Butterfly butterfly = new Butterfly("white", 12, 6, false, "exo", "body_head_ants", "fores", "sexual", 1, "macrolepidopteran suborder", new Date(), 3);
+        System.out.println("butterfly --> " + butterfly.toString());
+        butterfly.shedSkin();
+        butterfly.shedSkin("red");
         
-        animal = new Platypus(true, 0, 0, "spine small", 0, 0, "platypus scientific", new Date(), 0);
-        System.out.println("Animal -->" + animal);
-        System.out.println(animal.toString());
-        
-        animal = new Giraffe(0, "xd", 0, 0, "xd", new Date(), 0);
     }                
 }

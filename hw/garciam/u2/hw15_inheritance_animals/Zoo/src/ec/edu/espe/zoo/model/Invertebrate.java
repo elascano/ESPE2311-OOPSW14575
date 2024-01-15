@@ -26,7 +26,7 @@ public class Invertebrate extends Animal{
 
     @Override
     public String toString() {
-        return "Invertebrate{" + "AnatomyStructure=" + AnatomyStructure + ", habitat=" + habitat + ", reproductionType=" + reproductionType + '}';
+        return "Invertebrate{" + super.toString()+"AnatomyStructure=" + AnatomyStructure + ", habitat=" + habitat + ", reproductionType=" + reproductionType + '}';
     }
     
     
