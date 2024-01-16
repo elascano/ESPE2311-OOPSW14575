@@ -6,7 +6,8 @@ import java.util.Date;
  *
  * @author mateo
  */
-public class Squid extends Mollusk{
+public class Squid extends Mollusk {
+
     private float tentacleLength;
     private String inkColor;
 
@@ -15,12 +16,20 @@ public class Squid extends Mollusk{
         this.tentacleLength = tentacleLength;
         this.inkColor = inkColor;
     }
-    
-    public void ejectInk(){}
+
+    @Override
+    public boolean checkByAZoologist(int zoologistId) {
+        System.out.println("The zoologist with the Id " + zoologistId + "determinate that the squid is healthy");
+        return true;
+    }
+
+    public void ejectInk() {
+        System.out.println("Squid is eject Ink");
+    }
 
     @Override
     public String toString() {
         return "Squid{" + "tentacleLength=" + tentacleLength + ", inkColor=" + inkColor + '}';
     }
-    
+
 }
