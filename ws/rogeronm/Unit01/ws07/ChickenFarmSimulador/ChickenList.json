@@ -1,0 +1,37 @@
+[
+  {
+    "Id": 1,
+    "Age": 2,
+    "name ": "luisa",
+    "color ": "white",
+    "Is chicken Molting? ": true
+  },
+  {
+    "Id": 2,
+    "Age": 4,
+    "name ": "mateo",
+    "color ": "black",
+    "Is chicken Molting? ": false
+  },
+  {
+    "Id": 3,
+    "Age": 2,
+    "name ": "Jose",
+    "color ": "ehite",
+    "Is chicken Molting? ": false
+  },
+  {
+    "Id": 4,
+    "Age": 3,
+    "name ": "Mary",
+    "color ": "brown",
+    "Is chicken Molting? ": true
+  },
+  {
+    "Id": 5,
+    "Age": 2,
+    "name ": "Paty",
+    "color ": "white",
+    "Is chicken Molting? ": true
+  }
+]
