@@ -152,6 +152,7 @@ replay_pid*
 =======
 /ws/garciam/u2/ws25_inheritance/Zoo/nbproject/private/
 /ws/garciam/u2/ws25_inheritance/Zoo/build/
+<<<<<<< HEAD
 >>>>>>> 6c5b692b9033b83c7aa125de7ccd13144ae0c61b
 /hw/cedeñor/unit2/hw15ZooProgramming/Code/ZooProgramming/nbproject/private/
 >>>>>>> c372adb9f86fbfe155b69e612c320064b5b1b101
@@ -177,3 +178,9 @@ replay_pid*
 /ws/cedeñor/unit2/ws35Operations/Operations/build/
 /ws/cedeñor/unit2/ws35Operations/Code/Operations/build/
 /ws/cedeñor/unit2/ws35Operations/Code/Operations/nbproject/private/
+=======
+/ws/sagnayl/u2/WS34Interfaces/JavaApplication6/nbproject/private/
+/ws/sagnayl/u2/WS34Interfaces/Persitance/nbproject/private/
+/ws/sagnayl/u2/WS34Interfaces/Persistence/target/
+/ws/sagnayl/u2/WS34Interfaces/mavenproject1/target/
+>>>>>>> 92462c84be74125678c12c1fb2f4866474ac5c91
