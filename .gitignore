@@ -184,6 +184,7 @@ replay_pid*
 /ws/sagnayl/u2/WS34Interfaces/Persistence/target/
 /ws/sagnayl/u2/WS34Interfaces/mavenproject1/target/
 >>>>>>> 92462c84be74125678c12c1fb2f4866474ac5c91
+<<<<<<< HEAD
 /ws/cedeñor/unit2/ws36Widgets/Contacts/target/
 /hw/cedeñor/unit2/hw18UniteTest/UnitTest/target/
 /hw/cedeñor/unit2/hw18UniteTest/UnitTest/nbproject/
@@ -203,3 +204,6 @@ replay_pid*
 /hw/cedeñor/unit2/hw19GUIMongoDB/Contacts1/target/
 /ws/cedeñor/unit2/ws35Operations/FAndRO/target/
 /ws/cedeñor/unit2/ws35Operations/Vehicles/target/
+=======
+/ws/criollom/u2/ws36Widgets/Contacts/target/
+>>>>>>> dfc23810232037e4ebfb055c09ddb9974ddd374f
