@@ -184,4 +184,30 @@ replay_pid*
 /ws/sagnayl/u2/WS34Interfaces/Persistence/target/
 /ws/sagnayl/u2/WS34Interfaces/mavenproject1/target/
 >>>>>>> 92462c84be74125678c12c1fb2f4866474ac5c91
+<<<<<<< HEAD
 /ws/sagnayl/u2/WS38GUIMenu/DPEXSystem/target/
+=======
+<<<<<<< HEAD
+/ws/cedeñor/unit2/ws36Widgets/Contacts/target/
+/hw/cedeñor/unit2/hw18UniteTest/UnitTest/target/
+/hw/cedeñor/unit2/hw18UniteTest/UnitTest/nbproject/
+/hw/cedeñor/unit2/hw18UniteTest/TaxApp/nbproject/private/
+/hw/cedeñor/unit2/hw18UniteTest/TaxClient/build/
+/hw/cedeñor/unit2/hw18UniteTest/TaxClient/nbproject/private/
+/hw/cedeñor/unit2/hw18UniteTest/TaxLib/build/
+/hw/cedeñor/unit2/hw18UniteTest/TaxLib/nbproject/private/
+/hw/cedeñor/unit2/hw18UniteTest/Code/TaxApp/nbproject/private/
+/hw/cedeñor/unit2/hw18UniteTest/Code/TaxClient/build/
+/hw/cedeñor/unit2/hw18UniteTest/Code/TaxClient/nbproject/private/
+/hw/cedeñor/unit2/hw18UniteTest/Code/TaxLib/build/
+/hw/cedeñor/unit2/hw18UniteTest/Code/TaxLib/nbproject/private/
+/ws/cedeñor/unit2/ws37GUI/Code/FoodAndRollOrder/build/
+/ws/cedeñor/unit2/ws37GUI/Code/FoodAndRollOrder/dist/
+/ws/cedeñor/unit2/ws37GUI/Code/FoodAndRollOrder/nbproject/private/
+/hw/cedeñor/unit2/hw19GUIMongoDB/Contacts1/target/
+/ws/cedeñor/unit2/ws35Operations/FAndRO/target/
+/ws/cedeñor/unit2/ws35Operations/Vehicles/target/
+=======
+/ws/criollom/u2/ws36Widgets/Contacts/target/
+>>>>>>> dfc23810232037e4ebfb055c09ddb9974ddd374f
+>>>>>>> 49d37127d6d84d5ec569657a694fc7b6ee1c7a13
