@@ -14,11 +14,12 @@ import org.bson.Document;
  *
  * @author RC_558
  */
-public class MongoDBConnection {
+public class Intento3 {
 
     public static void main(String[] args) {
        
-        String connectionString = "mongodb+srv://rony558:Diego_558@cluster0.8o2u5up.mongodb.net/";
+       String uri =  "mongodb+srv://rony558:Diego_558@cluster0.8o2u5up.mongodb.net/";
+        String connectionString = uri;
 
         try (MongoClient mongoClient = MongoClients.create(connectionString)) {
             // Obtén la base de datos
