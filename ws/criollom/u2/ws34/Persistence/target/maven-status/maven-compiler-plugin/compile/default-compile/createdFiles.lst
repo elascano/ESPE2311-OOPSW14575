@@ -1,0 +1,10 @@
+ec\espe\edu\persistence\controller\MySQL.class
+ec\espe\edu\persistence\view\Test.class
+ec\espe\edu\persistence\controller\DBManager.class
+ec\espe\edu\persistence\controller\MongoManager.class
+ec\espe\edu\persistence\controller\FileManager.class
+ec\espe\edu\persistence\controller\Persistence.class
+ec\espe\edu\persistence\controller\SQL.class
+ec\espe\edu\persistence\controller\JsonManager.class
+ec\espe\edu\persistence\controller\NoSQL.class
+ec\espe\edu\persistence\model\Person.class

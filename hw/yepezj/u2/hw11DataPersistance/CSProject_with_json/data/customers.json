@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 1,
+    "Name": "Frederick",
+    "Adress": "Comite del Pueblo",
+    "Account": {
+      "Balance": 300.0,
+      "AccountNumber": 123456
+    }
+  },
+  {
+    "Id": 2,
+    "Name": "Samy",
+    "Adress": "Solanda",
+    "Account": {
+      "Balance": 25.0,
+      "AccountNumber": 478569
+    }
+  }
+]

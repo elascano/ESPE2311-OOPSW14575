@@ -1,0 +1,44 @@
+[
+    {
+        "book_id": "659ce112d645e",
+        "title": "111",
+        "author": "Lucy Maud Montgomery",
+        "publisher": "EUA Editions",
+        "publish_year": "123",
+        "cost": "123",
+        "sold": true,
+        "seller": {
+            "idSeller": 1,
+            "nameSeller": "Alex",
+            "totalToPay": 123
+        }
+    },
+    {
+        "book_id": "659ce12d16f13",
+        "title": "456",
+        "author": "Antoine Saint-Exupery",
+        "publisher": "EUA Editions",
+        "publish_year": "456",
+        "cost": "456",
+        "sold": true,
+        "seller": {
+            "idSeller": 0,
+            "nameSeller": "Sebasti\u00e1n",
+            "totalToPay": 456
+        }
+    },
+    {
+        "book_id": "659ce14f83f88",
+        "title": "789",
+        "author": "Jane Austen",
+        "publisher": "Editorial Alma",
+        "publish_year": "789",
+        "cost": "789",
+        "sold": true,
+        "seller": {
+            "idSeller": 2,
+            "nameSeller": "Stefany",
+            "totalToPay": 789
+        }
+    }
+]
