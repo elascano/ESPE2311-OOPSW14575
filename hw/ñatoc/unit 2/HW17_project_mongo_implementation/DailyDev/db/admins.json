@@ -1,0 +1,23 @@
+[
+  {
+    "role": "admin",
+    "organizationCode": "d7043233-8482-41d6-8052-95c68c309264",
+    "id": "1b944e09-cc57-438f-90a6-bee4f4468157",
+    "username": "Antonio",
+    "encryptedPassword": "Sfwjmmb"
+  },
+  {
+    "role": "admin",
+    "organizationCode": "73bdf556-218b-4663-9607-98ade73af094",
+    "id": "b2f1c45a-209a-4ec3-a71e-0ca663d7f437",
+    "username": "123",
+    "encryptedPassword": "qbttxpse"
+  },
+  {
+    "role": "admin",
+    "organizationCode": "337185d3-d9fa-4690-9ec6-179555e09698",
+    "id": "b289ed22-e0b1-4201-91cd-6982ecc04909",
+    "username": "uwu",
+    "encryptedPassword": "2345"
+  }
+]
