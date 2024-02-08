@@ -30,6 +30,11 @@ public class B extends A{
         this.listH = listH;
     }
 
+    @Override
+    public String toString() {
+        return "B{" + "listH=" + listH + '}';
+    }
+
     
 
 }

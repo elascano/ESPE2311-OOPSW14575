@@ -16,4 +16,6 @@ public class G implements H{
     public void delete(J j){
         
     }
+    
+    
 }
