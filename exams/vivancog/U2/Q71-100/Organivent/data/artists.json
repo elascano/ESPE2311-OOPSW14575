@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Luis Miguel",
+    "wage": 900000.0
+  },
+  {
+    "id": 2,
+    "name": "Michael Jackson",
+    "wage": 675000.0
+  },
+  {
+    "id": 3,
+    "name": "Camilo",
+    "wage": 1457.54
+  }
+]
