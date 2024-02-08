@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSInheritance", "CSInheritance.csproj", "{24041361-4FD0-4A25-9A68-14EBCA5D2EC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24041361-4FD0-4A25-9A68-14EBCA5D2EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24041361-4FD0-4A25-9A68-14EBCA5D2EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24041361-4FD0-4A25-9A68-14EBCA5D2EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24041361-4FD0-4A25-9A68-14EBCA5D2EC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBBCA993-DC40-4798-920C-B471B2A9E50D}
+	EndGlobalSection
+EndGlobal

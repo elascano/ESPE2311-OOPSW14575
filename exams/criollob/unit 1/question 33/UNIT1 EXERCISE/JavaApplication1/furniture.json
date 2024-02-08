@@ -1,18 +1,19 @@
 [
   {
-    "name": "table",
-    "weight": 10
+<<<<<<< HEAD
+    "name": "HOla",
+    "weight": 18
   },
   {
-    "name": "chair",
-    "weight": 20
+    "name": "COMPUTA",
+    "weight": 17
+=======
+    "name": "mesa",
+    "weight": 15
   },
   {
-    "name": "bed",
-    "weight": 52
-  },
-  {
-    "name": "libreria",
-    "weight": 62
+    "name": "silla",
+    "weight": 13
+>>>>>>> eacf79ff2b843ec5911b54283a096934289e5529
   }
 ]

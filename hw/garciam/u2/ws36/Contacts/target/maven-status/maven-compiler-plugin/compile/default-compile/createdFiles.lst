@@ -1,0 +1,9 @@
+ec/edu/espe/contact/model/Contact.class
+ec/edu/espe/contact/view/FrmContact$3.class
+ec/edu/espe/contact/view/FrmContact$4.class
+ec/edu/espe/contacts/Contacts.class
+ec/edu/espe/contact/controller/ContactController.class
+ec/edu/espe/contact/view/FrmContact$2.class
+ec/edu/espe/contact/view/FrmContact$1.class
+ec/edu/espe/contact/view/FrmContact.class
+utils/MongoDbManager.class

@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.6",
+    "@types/readline-sync": "^1.4.8"
+  },
+  "scripts": {
+    "start": "tsc && node ./dist/PetProject.js"
+  },
+  "name": "petproject",
+  "version": "1.0.0",
+  "main": "PetProject.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
