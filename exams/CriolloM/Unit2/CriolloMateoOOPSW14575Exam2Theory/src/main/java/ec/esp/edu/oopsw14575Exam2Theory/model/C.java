@@ -29,6 +29,11 @@ public class C extends A{
     public void setListE(ArrayList<E> listE) {
         this.listE = listE;
     }
+
+    @Override
+    public String toString() {
+        return "C{" + "listE=" + listE + '}';
+    }
     
     
 

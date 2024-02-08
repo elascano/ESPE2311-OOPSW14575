@@ -3,7 +3,11 @@
     <type>org.netbeans.modules.java.j2seproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+<<<<<<<< HEAD:hw/yepezj/u2/hw17projectMongoImplementation/Organivent1/nbproject/project.xml
             <name>Organivent1</name>
+========
+            <name>TaxClient</name>
+>>>>>>>> 3105831e9d4737ff3c9dddc8cf7c841ad97c3452:hw/cedeñor/unit2/hw18UniteTest/Code/TaxClient/nbproject/project.xml
             <source-roots>
                 <root id="src.dir"/>
             </source-roots>

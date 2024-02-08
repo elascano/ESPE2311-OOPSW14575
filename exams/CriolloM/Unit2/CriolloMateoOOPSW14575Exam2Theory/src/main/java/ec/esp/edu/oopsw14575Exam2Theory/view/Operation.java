@@ -18,7 +18,7 @@ import java.util.ArrayList;
  */
 public class Operation {
     public static void main(String[] args) {
-        ArrayList<A> listA = null;
+        ArrayList<A> listA = new ArrayList<>();
         
         A elementA = new A(listA);
         
@@ -29,7 +29,7 @@ public class Operation {
         System.out.println("-->"+elementB.toString());
         
         C elementC = new C(listA);
-        ArrayList<F> listF = null;
+        ArrayList<F> listF = new ArrayList<>();
         System.out.println("-->"+elementC.toString());
         
         D elementD  = new D(listF, listA);
@@ -44,7 +44,7 @@ public class Operation {
         G elementG = new G();
         System.out.println("-->"+elementG.toString());
         
-        H elementH = null;
+        H elementH=null;
         System.out.println("-->"+elementH);
         
         J elementj = new J();
