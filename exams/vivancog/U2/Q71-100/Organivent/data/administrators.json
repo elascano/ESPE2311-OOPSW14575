@@ -1,0 +1,54 @@
+[
+  {
+    "userName": "Fredo",
+    "password": [
+      60,
+      35,
+      47,
+      -123,
+      102,
+      79,
+      -19,
+      -68,
+      -10,
+      -32,
+      66,
+      73,
+      -101,
+      9,
+      -112,
+      -3
+    ],
+    "email": "fredericktimo@gmail.com",
+    "phoneNumber": 982679344,
+    "id": 1,
+    "name": "Fréderick Santiago Tipán Moreno",
+    "wage": 750.0
+  },
+  {
+    "userName": "Samy",
+    "password": [
+      -44,
+      27,
+      -121,
+      -45,
+      113,
+      -28,
+      1,
+      -42,
+      -36,
+      94,
+      -74,
+      55,
+      -98,
+      8,
+      123,
+      51
+    ],
+    "email": "smay@gmail.com",
+    "phoneNumber": 987071735,
+    "id": 2,
+    "name": "Samantha Valeska Tipán Moreno",
+    "wage": 380.0
+  }
+]

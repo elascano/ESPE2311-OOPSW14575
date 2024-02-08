@@ -1,0 +1,5 @@
+espe\edu\ec\shopShoes\view\FrmShoes$1.class
+espe\edu\ec\shopShoes\view\MongoDBShoes.class
+espe\edu\ec\Shoes\controller\ConnectionMongoShoes.class
+espe\edu\ec\Shoes\model\Shoes.class
+espe\edu\ec\shopShoes\view\FrmShoes.class
