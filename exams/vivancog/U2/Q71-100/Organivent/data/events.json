@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "artist": {
+      "id": 1,
+      "name": "Luis Miguel",
+      "wage": 900000.0
+    },
+    "place": {
+      "name": "Estadio Atahualpa",
+      "adress": "Av. 6 de Dic",
+      "rentCost": 750000.0,
+      "capacity": 40000
+    },
+    "startTime": {
+      "year": 2024,
+      "month": 2,
+      "day": 21,
+      "hours": 19,
+      "minutes": 0
+    },
+    "endTime": {
+      "year": 2024,
+      "month": 2,
+      "day": 21,
+      "hours": 22,
+      "minutes": 0
+    },
+    "staff": [
+      {
+        "id": 1,
+        "type": "Sellers",
+        "employees": [
+          {
+            "id": 2,
+            "name": "Diego Carrera",
+            "wage": 8.0
+          },
+          {
+            "id": 3,
+            "name": "Ronnie Rodriguez",
+            "wage": 7.25
+          }
+        ],
+        "totalStaffCost": 610.0,
+        "daysWorked": 4,
+        "hoursWorked": 10
+      },
+      {
+        "id": 2,
+        "type": "Supervisor",
+        "employees": [
+          {
+            "id": 1,
+            "name": "Alejandro Redin",
+            "wage": 6.5
+          }
+        ],
+        "totalStaffCost": 286.0,
+        "daysWorked": 4,
+        "hoursWorked": 11
+      }
+    ],
+    "equipment": [
+      {
+        "type": "Datafast",
+        "cost": 150.0,
+        "quantity": 3
+      }
+    ],
+    "generalExpenses": [
+      {
+        "type": "General",
+        "costAmount": 300.0
+      }
+    ],
+    "penaltyFees": []
+  }
+]

@@ -32,7 +32,7 @@ public class FrmMeeting extends javax.swing.JFrame {
         model.setColumnIdentifiers(title);
         tblDate.setModel(model);
         loadMeetings(mongoClient);
-        loadParticipants(mongoClient);
+        
     }
 
     void loadParticipants(MongoClient mongoClient) {
@@ -61,14 +61,7 @@ public class FrmMeeting extends javax.swing.JFrame {
             String title = document.getString("title");
             String startTime = document.getString("startTime");
             String endTime = document.getString("endTime");
-
-            List<Document> participantsDocuments = (List<Document>) document.get("participants");
-            List<Users> participants = new ArrayList<>();
-
-            for (Document participantDocument : participantsDocuments) {
-                Users participant = Users.fromDocument(participantDocument);
-                participants.add(participant);
-            }
+            
             model.addRow(new Object[]{title, startTime, endTime, participants});
         }
     }
