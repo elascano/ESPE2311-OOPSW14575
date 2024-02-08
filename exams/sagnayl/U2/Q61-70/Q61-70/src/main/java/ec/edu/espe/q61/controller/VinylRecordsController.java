@@ -35,7 +35,7 @@ public class VinylRecordsController {
         MongoConection.conectToMongoDb();
         mongoClient = MongoConection.conectToMongoDb(); 
         MongoDatabase database = mongoClient.getDatabase(DATA_BASE);
-        MongoCollection<Document> collection = database.getCollection("Country");
+        MongoCollection<Document> collection = database.getCollection("VinylRecords");
         Document filter = new Document("id", vinylRecords.getId());
         Document updateItem = new Document("$set", new Document()
         .append("name", vinylRecords.getName())
@@ -49,9 +49,9 @@ public class VinylRecordsController {
         MongoConection.conectToMongoDb();
         mongoClient = MongoConection.conectToMongoDb();  
         {
-            MongoDatabase database = mongoClient.getDatabase("Project");
+            MongoDatabase database = mongoClient.getDatabase(DATA_BASE);
             System.out.println("Connected to the database.");
-            MongoCollection<Document> collection = database.getCollection("inventory");
+            MongoCollection<Document> collection = database.getCollection("VinylRecords");
             System.out.print("\n Input the ID to find the ingredient: ");
             id = scanner.nextInt();
 
