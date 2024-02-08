@@ -1,0 +1,9 @@
+ec/edu/espe/persistance/model/Client.class
+ec/edu/espe/persistance/controller/IDBManager.class
+ec/edu/espe/persistance/controller/IPersistence.class
+ec/edu/espe/persistance/controller/FileManager.class
+ec/edu/espe/persistance/controller/JsonManager.class
+ec/edu/espe/persistance/controller/IFileManager.class
+ec/edu/espe/persistance/controller/MongoDB.class
+ec/edu/espe/persistance/model/Person.class
+ec/edu/espe/persistance/controller/INoSqlManager.class

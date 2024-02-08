@@ -1,0 +1,9 @@
+ec\edu\espe\persistence\controller\DBManager.class
+ec\edu\espe\persistence\controller\MongoManager.class
+ec\edu\espe\persistence\controller\JsonManager.class
+ec\edu\espe\persistence\controller\NoSqlManager.class
+ec\edu\espe\persistence\controller\Persistence.class
+ec\edu\espe\persistence\controller\SqlManager.class
+ec\edu\espe\persistence\model\Country.class
+ec\edu\espe\persistence\view\TestInterfaces.class
+ec\edu\espe\persistence\controller\FileManager.class
