@@ -1,0 +1,19 @@
+[
+  {
+    "id": "0961fd84-19fe-4adf-bd52-15236a77e43c",
+    "username": "Olivier",
+    "encryptedPassword": "qbttxpse"
+  },
+  {
+    "id": "1e7e4218-865c-4ef4-90e5-2184332d793b",
+    "username": "olivier",
+    "encryptedPassword": "qbttxpse"
+  },
+  {
+    "role": "developer",
+    "organizationCode": "f215ccba-e771-4ab6-87e2-bf55c8ded1bb",
+    "id": "814d9ad0-5548-4de5-88d1-97551919c4e7",
+    "username": "testuser",
+    "encryptedPassword": "qbttxpse"
+  }
+]
