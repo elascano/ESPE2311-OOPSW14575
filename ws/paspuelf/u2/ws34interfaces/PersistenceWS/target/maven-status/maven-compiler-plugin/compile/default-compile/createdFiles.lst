@@ -1,0 +1,6 @@
+ec\edu\espe\persistence\controller\MongoDBHandler.class
+ec\edu\espe\persistence\controller\NoSQLHandler.class
+ec\edu\espe\persistence\controller\Persistence.class
+ec\edu\espe\persistence\controller\TestSystem.class
+ec\edu\espe\persistence\controller\FileManager.class
+ec\edu\espe\persistence\controller\DBManager.class
