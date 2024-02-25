@@ -296,8 +296,8 @@ public class FrmCreateSmartwatch extends javax.swing.JFrame {
         int discountMin;
         int id;
         try {
-            price = Double.parseDouble(txtPrice.getText());
-            discountRate = Double.parseDouble(txtDiscountRate.getText());
+            price = Double.parseDouble(txtPrice.getText().replaceAll(",", "."));
+            discountRate = Double.parseDouble(txtDiscountRate.getText().replaceAll(",", "."));
             discountMin = sldDiscountMin.getValue();
             id = Integer.parseInt(txtId.getText());
         } catch (NumberFormatException e) {
