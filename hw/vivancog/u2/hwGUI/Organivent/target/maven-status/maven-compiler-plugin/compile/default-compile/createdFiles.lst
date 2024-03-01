@@ -1,0 +1,6 @@
+ec\edu\espe\organivent\model\Artist.class
+ec\edu\espe\organivent\model\Event.class
+ec\edu\espe\organivent\utils\ValidationTime.class
+ec\edu\espe\organivent\model\Schedule.class
+ec\edu\espe\organivent\model\EventPlace.class
+ec\edu\espe\organivent\model\Person.class
