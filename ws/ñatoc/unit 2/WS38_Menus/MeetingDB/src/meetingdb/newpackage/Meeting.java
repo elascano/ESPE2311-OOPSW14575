@@ -14,9 +14,9 @@ public class Meeting {
     private String title;
     private String startTime;
     private String endTime;
-    private List<Users> participants;
+    private List<String> participants;
 
-    public Meeting(String title, String startTime, String endTime, List<Users> participants) {
+    public Meeting(String title, String startTime, String endTime, List<String> participants) {
         this.title = title;
         this.startTime = startTime;
         this.endTime = endTime;
@@ -36,13 +36,6 @@ public class Meeting {
                 .append("startTime", getStartTime() != null ? getStartTime() : "")
                 .append("endTime", getEndTime() != null ? getEndTime() : "");
         
-            if (participants != null && !participants.isEmpty()) {
-            List<Document> participantsDocuments = new ArrayList<>();
-            for (Users participant : participants) {
-                participantsDocuments.add(participant.toDocument());
-            }
-            newMeetingDocument.append("participants", participantsDocuments);
-        }
         return newMeetingDocument;
     }
 
@@ -51,15 +44,8 @@ public class Meeting {
         String startTime = document.getString("startTime");
         String endTime = document.getString("endTime");
     
-        List<Document> participantsDocuments = document.getList("participants", Document.class);
-        List<Users> participants = new ArrayList<>();
-
-        for (Document participantDocument : participantsDocuments) {
-     
-            Users participant = Users.fromDocument(participantDocument);
-            participants.add(participant);
-        }
-        return new Meeting(title, startTime, endTime,participants);
+ 
+        return new Meeting(title, startTime, endTime,);
     }
     
     
@@ -120,14 +106,5 @@ public class Meeting {
     /**
      * @return the participants
      */
-    public List<Users> getParticipants() {
-        return participants;
-    }
 
-    /**
-     * @param participants the participants to set
-     */
-    public void setParticipants(List<Users> participants) {
-        this.participants = participants;
-    }
 }

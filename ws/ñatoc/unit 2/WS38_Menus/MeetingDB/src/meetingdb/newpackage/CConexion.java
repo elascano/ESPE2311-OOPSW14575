@@ -1,13 +1,10 @@
 package meetingdb.newpackage;
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
 import com.mongodb.MongoException;
-import com.mongodb.client.MongoDatabase;
 import java.util.List;
 import javax.swing.JOptionPane;
-import org.bson.Document;
-import com.mongodb.client.MongoCollection;
+import javax.swing.text.Document;
+
 
 
 /**
