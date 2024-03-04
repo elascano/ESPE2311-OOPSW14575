@@ -1,0 +1,12 @@
+{
+  "book1": {
+    "title": "The Kotlin Programming Language",
+    "author": "JetBrains",
+    "pages": 500
+  },
+  "book2": {
+    "title": "Effective Kotlin",
+    "author": "Joshua Bloch",
+    "pages": 220
+  }
+}

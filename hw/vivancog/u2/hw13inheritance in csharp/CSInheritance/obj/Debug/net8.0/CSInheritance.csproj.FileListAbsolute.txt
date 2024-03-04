@@ -1,0 +1,14 @@
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\CSInheritance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\CSInheritance.AssemblyInfoInputs.cache
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\CSInheritance.AssemblyInfo.cs
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\CSInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Frederick\Desktop\Repo\CSInheritance\bin\Debug\net8.0\CSInheritance.exe
+C:\Users\Frederick\Desktop\Repo\CSInheritance\bin\Debug\net8.0\CSInheritance.deps.json
+C:\Users\Frederick\Desktop\Repo\CSInheritance\bin\Debug\net8.0\CSInheritance.runtimeconfig.json
+C:\Users\Frederick\Desktop\Repo\CSInheritance\bin\Debug\net8.0\CSInheritance.dll
+C:\Users\Frederick\Desktop\Repo\CSInheritance\bin\Debug\net8.0\CSInheritance.pdb
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\CSInheritance.dll
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\refint\CSInheritance.dll
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\CSInheritance.pdb
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\CSInheritance.genruntimeconfig.cache
+C:\Users\Frederick\Desktop\Repo\CSInheritance\obj\Debug\net8.0\ref\CSInheritance.dll

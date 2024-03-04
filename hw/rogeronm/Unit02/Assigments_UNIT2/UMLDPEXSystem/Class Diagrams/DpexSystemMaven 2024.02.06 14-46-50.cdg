@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="DpexSystemMaven">
+  <ClassDiagramComponents>
+    <Class name="ConectionMongoDB" package="ec.edu.espe.dpexsystem.controller" visibility="public" xPosition="48.0" yPosition="1088.0">
+      <Fields>
+        <Field name="mongoClient" type="MongoClient" visibility="private" isStatic="true"/>
+        <Field name="database" type="MongoDatabase" visibility="private" isStatic="true"/>
+        <Field name="pojoCodecProvider" type="CodecProvider" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="pojoCodecRegistry" type="CodecRegistry" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="URI"/>
+          <Argument type="String" name="DB"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="connect" returnType="void" visibility="public" isFinal="true">
+          <Argument type="String" name="URI"/>
+        </Method>
+        <Method name="create" returnType="void" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="T" name="object"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="Object" name="query"/>
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="delete" returnType="void" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="Object" name="query"/>
+        </Method>
+        <Method name="read" returnType="MongoCursor&lt;T&gt;" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="T" name="query"/>
+        </Method>
+        <Method name="readAll" returnType="MongoCursor&lt;T&gt;" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="Class&lt;T&gt;" name="clazz"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DBConnectionController" package="ec.edu.espe.dpexsystem.controller" visibility="public" xPosition="-22.0" yPosition="1954.0">
+      <Fields>
+        <Field name="conectionMongoDB" type="ConectionMongoDB" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="createConnection" returnType="boolean" visibility="public" isStatic="true"/>
+        <Method name="getConection" returnType="ConectionMongoDB" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="DBManager" package="ec.edu.espe.dpexsystem.controller" visibility="public" isAbstract="true" xPosition="241.0" yPosition="1515.0">
+      <Fields>
+        <Field name="URI" type="String" visibility="public" isStatic="true"/>
+        <Field name="DataBase" type="String" visibility="public" isStatic="true"/>
+        <Field name="Collection" type="String" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getURI" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setURI" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="URI"/>
+        </Method>
+        <Method name="getDataBase" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setDataBase" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="DataBase"/>
+        </Method>
+        <Method name="getCollection" returnType="String" visibility="public" isStatic="true"/>
+        <Method name="setCollection" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="Collection"/>
+        </Method>
+        <Method name="connect" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="String" name="URI"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UserMongoDBConection" package="ec.edu.espe.dpexsystem.controller" visibility="public" xPosition="1129.0" yPosition="1902.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="mongoConection" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="addUserToMongoDB" returnType="void" visibility="private" isStatic="true">
+          <Argument type="MongoCollection&lt;Document&gt;" name="collection"/>
+          <Argument type="Scanner" name="scanner"/>
+        </Method>
+        <Method name="readUsersFromMongoDB" returnType="void" visibility="private" isStatic="true">
+          <Argument type="MongoCollection&lt;Document&gt;" name="collection"/>
+        </Method>
+        <Method name="convertDocumentToUser" returnType="User" visibility="private" isStatic="true">
+          <Argument type="Document" name="document"/>
+        </Method>
+        <Method name="updateUserInMongoDB" returnType="void" visibility="private" isStatic="true">
+          <Argument type="MongoCollection&lt;Document&gt;" name="collection"/>
+          <Argument type="Scanner" name="scanner"/>
+        </Method>
+        <Method name="updateExistingUser" returnType="void" visibility="private" isStatic="true">
+          <Argument type="MongoCollection&lt;Document&gt;" name="collection"/>
+          <Argument type="String" name="usernameToUpdate"/>
+          <Argument type="String" name="newUsername"/>
+          <Argument type="String" name="newPassword"/>
+        </Method>
+        <Method name="deleteUserFromMongoDB" returnType="void" visibility="private" isStatic="true">
+          <Argument type="MongoCollection&lt;Document&gt;" name="collection"/>
+          <Argument type="Scanner" name="scanner"/>
+        </Method>
+        <Method name="deleteExistingUser" returnType="void" visibility="private" isStatic="true">
+          <Argument type="MongoCollection&lt;Document&gt;" name="collection"/>
+          <Argument type="String" name="usernameToDelete"/>
+        </Method>
+        <Method name="saveUserToJson" returnType="void" visibility="private" isStatic="true">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="saveUserToMongoDB" returnType="void" visibility="private" isStatic="true">
+          <Argument type="User" name="user"/>
+          <Argument type="MongoCollection&lt;Document&gt;" name="collection"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Constituency" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="3561.0" yPosition="1849.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="countryNames" type="ArrayList&lt;String&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="addCountry" returnType="void" visibility="public">
+          <Argument type="String" name="countryName"/>
+        </Method>
+        <Method name="getCountryNames" returnType="ArrayList&lt;String&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ConsularOffice" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="2061.0" yPosition="395.0">
+      <Fields>
+        <Field name="id" type="ObjectId" visibility="private"/>
+        <Field name="officeName" type="String" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="district" type="District" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="officeName"/>
+          <Argument type="String" name="address"/>
+          <Argument type="District" name="district"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getDistrict" returnType="District" visibility="public"/>
+        <Method name="setDistrict" returnType="void" visibility="public">
+          <Argument type="District" name="district"/>
+        </Method>
+        <Method name="getOfficeName" returnType="String" visibility="public"/>
+        <Method name="setOfficeName" returnType="void" visibility="public">
+          <Argument type="String" name="officeName"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="getOfficeDetails" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Country" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="2709.0" yPosition="325.0">
+      <Fields>
+        <Field name="id" type="ObjectId" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="ecuadorianPopulation" type="int" visibility="private"/>
+        <Field name="consularOffice" type="ConsularOffice" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="int" name="ecuadorianPopulation"/>
+          <Argument type="ConsularOffice" name="consularOffice"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getEcuadorianPopulation" returnType="int" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setEcuadorianPopulation" returnType="void" visibility="public">
+          <Argument type="int" name="ecuadorianPopulation"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getConsularOffice" returnType="ConsularOffice" visibility="public"/>
+        <Method name="setConsularOffice" returnType="void" visibility="public">
+          <Argument type="ConsularOffice" name="consularOffice"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DPEX" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="storage" type="Storage" visibility="private"/>
+        <Field name="shipping" type="Shipping" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ElectoralPackage" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="1610.0" yPosition="1149.0">
+      <Fields>
+        <Field name="packageId" type="int" visibility="private"/>
+        <Field name="country" type="Country" visibility="private"/>
+        <Field name="packageType" type="PackageType" visibility="private"/>
+        <Field name="weight" type="float" visibility="private"/>
+        <Field name="status" type="PackageStatus" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="updateStatus" returnType="void" visibility="public">
+          <Argument type="String" name="status"/>
+        </Method>
+        <Method name="updateShippingStatus" returnType="void" visibility="public">
+          <Argument type="String" name="shippingStatus"/>
+        </Method>
+        <Method name="generateRandomPackageId" returnType="int" visibility="private"/>
+        <Method name="getPackageId" returnType="int" visibility="public"/>
+        <Method name="setPackageId" returnType="void" visibility="public">
+          <Argument type="int" name="packageId"/>
+        </Method>
+        <Method name="getCountry" returnType="Country" visibility="public"/>
+        <Method name="setCountry" returnType="void" visibility="public">
+          <Argument type="Country" name="country"/>
+        </Method>
+        <Method name="getPackageType" returnType="PackageType" visibility="public"/>
+        <Method name="setPackageType" returnType="void" visibility="public">
+          <Argument type="PackageType" name="packageType"/>
+        </Method>
+        <Method name="getWeight" returnType="float" visibility="public"/>
+        <Method name="setWeight" returnType="void" visibility="public">
+          <Argument type="float" name="weight"/>
+        </Method>
+        <Method name="getStatus" returnType="PackageStatus" visibility="public"/>
+        <Method name="setStatus" returnType="void" visibility="public">
+          <Argument type="PackageStatus" name="status"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Recount" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="1104.0" yPosition="1254.0">
+      <Fields>
+        <Field name="packages" type="ArrayList&lt;ElectoralPackage&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addPackage" returnType="void" visibility="public">
+          <Argument type="ElectoralPackage" name="packages"/>
+        </Method>
+        <Method name="getListPackage" returnType="void" visibility="public">
+          <Argument type="ElectoralPackage" name="packages"/>
+        </Method>
+        <Method name="removePackage" returnType="void" visibility="public">
+          <Argument type="ElectoralPackage" name="packages"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Shipping" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="559.0" yPosition="128.0">
+      <Fields>
+        <Field name="packages" type="ElectoralPackage[]" visibility="private"/>
+        <Field name="dispatchDate" type="Date" visibility="private"/>
+        <Field name="arrivalDate" type="Date" visibility="private"/>
+        <Field name="currentLocation" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getCurrentLocation" returnType="String" visibility="public"/>
+        <Method name="uplateLocation" returnType="void" visibility="public">
+          <Argument type="String" name="location"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Storage" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="1118.0" yPosition="261.0">
+      <Fields>
+        <Field name="packages" type="ArrayList&lt;ElectoralPackage&gt;" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addPackage" returnType="void" visibility="public">
+          <Argument type="ElectoralPackage" name="packages"/>
+        </Method>
+        <Method name="removePackage" returnType="void" visibility="public">
+          <Argument type="ElectoralPackage" name="packages"/>
+        </Method>
+        <Method name="getPackage" returnType="ElectoralPackage[]" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="User" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="1133.0" yPosition="2392.0">
+      <Fields>
+        <Field name="id" type="UUID" visibility="private" isFinal="true"/>
+        <Field name="username" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="type" type="UserType" visibility="private"/>
+        <Field name="firstName" type="String" visibility="private"/>
+        <Field name="lastName" type="String" visibility="private"/>
+        <Field name="SAVE_FILE" type="String" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+          <Argument type="UserType" name="type"/>
+          <Argument type="String" name="firstName"/>
+          <Argument type="String" name="lastName"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="UUID" name="id"/>
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+          <Argument type="UserType" name="type"/>
+          <Argument type="String" name="firstName"/>
+          <Argument type="String" name="lastName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addUser" returnType="void" visibility="public" isStatic="true">
+          <Argument type="User" name="user"/>
+        </Method>
+        <Method name="loadFromFile" returnType="ArrayList&lt;User&gt;" visibility="public" isStatic="true"/>
+        <Method name="saveToFile" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ArrayList&lt;User&gt;" name="users"/>
+        </Method>
+        <Method name="getId" returnType="UUID" visibility="public"/>
+        <Method name="encryptPassword" returnType="String" visibility="private" isStatic="true">
+          <Argument type="String" name="source"/>
+        </Method>
+        <Method name="decryptPassword" returnType="String" visibility="private"/>
+        <Method name="login" returnType="User" visibility="public" isStatic="true">
+          <Argument type="String" name="providedUsername"/>
+          <Argument type="String" name="providedPassword"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getFirstName" returnType="String" visibility="public"/>
+        <Method name="setFirstName" returnType="void" visibility="public">
+          <Argument type="String" name="firstName"/>
+        </Method>
+        <Method name="getLastName" returnType="String" visibility="public"/>
+        <Method name="setLastName" returnType="void" visibility="public">
+          <Argument type="String" name="lastName"/>
+        </Method>
+        <Method name="getType" returnType="UserType" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="UserType" name="type"/>
+        </Method>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+        <Method name="getSAVE_FILE" returnType="String" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Color" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="2942.0" yPosition="3224.0">
+      <Fields>
+        <Field name="RESET" type="String" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="BLUE" type="String" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="YELLOW" type="String" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="RED" type="String" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ConsoleMenu" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="3074.0" yPosition="2612.0">
+      <Fields>
+        <Field name="options" type="List&lt;String&gt;" visibility="private" isFinal="true"/>
+        <Field name="title" type="String" visibility="private" isFinal="true"/>
+        <Field name="scanner" type="Scanner" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="title"/>
+          <Argument type="List&lt;String&gt;" name="options"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="displayMenu" returnType="void" visibility="public"/>
+        <Method name="getUserChoice" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ConsoleUtil" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="2571.0" yPosition="2905.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="consolePause" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="clearConsole" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="JsonHandler" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="2885.0" yPosition="2848.0">
+      <Fields>
+        <Field name="gson" type="Gson" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="readFromJson" returnType="T" visibility="public" isStatic="true">
+          <Argument type="String" name="filePath"/>
+          <Argument type="Type" name="typeOfT"/>
+        </Method>
+        <Method name="writeToJson" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="filePath"/>
+          <Argument type="T" name="object"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LoginMenu" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="814.0" yPosition="2299.0">
+      <Fields>
+        <Field name="DEFAULT_USERNAME" type="String" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="DEFAULT_PASSWORD" type="String" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="showLoginPrompt" returnType="User" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="MessageBox" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="2166.0" yPosition="2533.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="printMessage" returnType="void" visibility="private" isStatic="true">
+          <Argument type="String" name="message"/>
+          <Argument type="String" name="prefix"/>
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="pause"/>
+          <Argument type="boolean" name="clear"/>
+        </Method>
+        <Method name="info" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+          <Argument type="boolean" name="pause"/>
+          <Argument type="boolean" name="clear"/>
+        </Method>
+        <Method name="warn" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+          <Argument type="boolean" name="pause"/>
+          <Argument type="boolean" name="clear"/>
+        </Method>
+        <Method name="error" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+          <Argument type="boolean" name="pause"/>
+          <Argument type="boolean" name="clear"/>
+        </Method>
+        <Method name="info" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="warn" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="error" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Settings" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="2810.0" yPosition="2688.0">
+      <Fields>
+        <Field name="MongoURI" type="String" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="DBName" type="String" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="CountriesCollection" type="String" visibility="public" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="UserInput" package="ec.edu.espe.dpexsystem.utils" visibility="public" xPosition="3429.0" yPosition="2571.0">
+      <Fields>
+        <Field name="scanner" type="Scanner" visibility="private" isStatic="true" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="getInt" returnType="int" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+        </Method>
+        <Method name="getInt" returnType="int" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+          <Argument type="int" name="min"/>
+        </Method>
+        <Method name="getFloat" returnType="float" visibility="public" isStatic="true">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DPEXSystem" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="2264.0" yPosition="1565.0">
+      <Fields>
+        <Field name="allCountries" type="ArrayList&lt;Country&gt;" visibility="private" isStatic="true"/>
+        <Field name="users" type="ArrayList&lt;User&gt;" visibility="public" isStatic="true"/>
+        <Field name="consularOffices" type="ArrayList&lt;ConsularOffice&gt;" visibility="private" isStatic="true"/>
+        <Field name="COUNTRIES_FILE" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="allPackages" type="ArrayList&lt;ElectoralPackage&gt;" visibility="private" isStatic="true"/>
+        <Field name="PACKAGES_FILE" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="allConstituencies" type="ArrayList&lt;Constituency&gt;" visibility="private" isStatic="true"/>
+        <Field name="CONSTITUENCIES_FILE" type="String" visibility="private" isStatic="true" isFinal="true"/>
+        <Field name="currentUser" type="User" visibility="private" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="addCountry" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Country" name="country"/>
+        </Method>
+        <Method name="getCountry" returnType="Country" visibility="public" isStatic="true">
+          <Argument type="String" name="countryName"/>
+        </Method>
+        <Method name="getCountry" returnType="Country" visibility="public" isStatic="true"/>
+        <Method name="initFolderStructure" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="getAllCountries" returnType="ArrayList&lt;Country&gt;" visibility="public" isStatic="true"/>
+        <Method name="saveCountries" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="loadCountries" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="addConsularOffice" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ConsularOffice" name="consularOffice"/>
+        </Method>
+        <Method name="getConsularOffice" returnType="ConsularOffice" visibility="public" isStatic="true">
+          <Argument type="String" name="consularOfficeName"/>
+        </Method>
+        <Method name="getAllPackages" returnType="ArrayList&lt;ElectoralPackage&gt;" visibility="public" isStatic="true"/>
+        <Method name="addElectoralPackage" returnType="void" visibility="public" isStatic="true">
+          <Argument type="ElectoralPackage" name="electoralPackage"/>
+        </Method>
+        <Method name="saveElectoralPackages" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="addConstituency" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Constituency" name="constituency"/>
+        </Method>
+        <Method name="getConstituency" returnType="Constituency" visibility="public" isStatic="true">
+          <Argument type="String" name="constituencyName"/>
+        </Method>
+        <Method name="getAllConstituencies" returnType="ArrayList&lt;Constituency&gt;" visibility="public" isStatic="true"/>
+        <Method name="saveConstituencies" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="addCountryToConstituency" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="countryName"/>
+          <Argument type="String" name="constituencyName"/>
+        </Method>
+        <Method name="loadConstituencies" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="getCurrentUser" returnType="User" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="FrmCountry" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="3295.0" yPosition="736.0">
+      <Fields>
+        <Field name="instance" type="FrmCountry" visibility="private" isFinal="true"/>
+        <Field name="btnAdd" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnMenu" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cmbDistrict" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="txtAddress" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtName" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtOfficeNamr" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtPopulation" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnMenuActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="insertCountryAsync" returnType="void" visibility="private">
+          <Argument type="Country" name="country"/>
+        </Method>
+        <Method name="btnAddActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="clearForm" returnType="void" visibility="private"/>
+        <Method name="checkForm" returnType="boolean" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrmDPEXSplash" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="135.0" yPosition="3499.0">
+      <Fields>
+        <Field name="splashTimer" type="Timer" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initSplashTimer" returnType="void" visibility="private"/>
+        <Method name="showLoginForm" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="formWindowOpened" returnType="void" visibility="private">
+          <Argument type="java.awt.event.WindowEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrmDPEXSystemMenu" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="1153.0" yPosition="3150.0">
+      <Fields>
+        <Field name="itmExit" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="itmLogout" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="itmRegisterCountry" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="itmRegisterPackage" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="itmSentPackage" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="itmViewCountries" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="itmViewPackage" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem3" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem4" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="mnuCountry" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="mnuDpex" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="mnuElectoralPackage" type="javax.swing.JMenu" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="itmRegisterPackageActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="itmRegisterCountryActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="itmLogoutActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="mnuElectoralPackageActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="itmViewCountriesActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrmElectoralPackage" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="2120.0" yPosition="2977.0">
+      <Fields>
+        <Field name="btnAdd" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnMenu" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cbCountries" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="txtWeight" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnMenuActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cbCountriesActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnAddActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrmLogin" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="147.0" yPosition="3083.0">
+      <Fields>
+        <Field name="btnLogin" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jColorChooser1" type="javax.swing.JColorChooser" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="txtPassword" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="txtUsername" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnLoginActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrmMainMenu" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="3249.0" yPosition="2915.0">
+      <Fields>
+        <Field name="btnCountries" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnElectoralP" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jCheckBoxMenuItem1" type="javax.swing.JCheckBoxMenuItem" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu3" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu4" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jPanel5" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel6" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel7" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPopupMenu1" type="javax.swing.JPopupMenu" visibility="private"/>
+        <Field name="jRadioButtonMenuItem1" type="javax.swing.JRadioButtonMenuItem" visibility="private"/>
+        <Field name="menu1" type="java.awt.Menu" visibility="private"/>
+        <Field name="menu2" type="java.awt.Menu" visibility="private"/>
+        <Field name="menu3" type="java.awt.Menu" visibility="private"/>
+        <Field name="menu4" type="java.awt.Menu" visibility="private"/>
+        <Field name="menuBar1" type="java.awt.MenuBar" visibility="private"/>
+        <Field name="menuBar2" type="java.awt.MenuBar" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="btnElectoralPActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnCountriesActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="FrmViewCountry" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="1610.0" yPosition="3134.0">
+      <Fields>
+        <Field name="instance" type="javax.swing.JFrame" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jDialog1" type="javax.swing.JDialog" visibility="private"/>
+        <Field name="jDialog2" type="javax.swing.JDialog" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="tableCountries" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="populateCountriesTableAsync" returnType="void" visibility="private"/>
+        <Method name="populateCountriesTable" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FrmViewElectoralPackage" package="ec.edu.espe.dpexsystem.view" visibility="public" xPosition="-9.0" yPosition="2749.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Persistence" package="ec.edu.espe.dpexsystem.controller" visibility="public" xPosition="320.0" yPosition="2355.0">
+      <Methods>
+        <Method name="create" returnType="void" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="T" name="object"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="T" name="query"/>
+          <Argument type="T" name="object"/>
+        </Method>
+        <Method name="delete" returnType="void" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="T" name="query"/>
+        </Method>
+        <Method name="read" returnType="Iterator&lt;T&gt;" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="T" name="query"/>
+        </Method>
+        <Method name="readAll" returnType="Iterator&lt;T&gt;" visibility="public">
+          <Argument type="String" name="collection"/>
+          <Argument type="Class&lt;T&gt;" name="clazz"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Enum name="District" package="ec.edu.espe.dpexsystem.model" visibility="public" xPosition="2033.0" yPosition="92.0">
+      <Literals>
+        <Literal name="EUROPA_ASIA_OCEANIA"/>
+        <Literal name="USA_CANADA"/>
+        <Literal name="LAT_CAR_AFRICA"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="consularOffice" source="ec.edu.espe.dpexsystem.model.Country" target="ec.edu.espe.dpexsystem.model.ConsularOffice" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.model.Storage" target="ec.edu.espe.dpexsystem.model.ElectoralPackage" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="packages" source="ec.edu.espe.dpexsystem.model.Storage" target="ec.edu.espe.dpexsystem.model.ElectoralPackage" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;ElectoralPackage&gt;"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.ConsularOffice" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.view.FrmCountry" target="ec.edu.espe.dpexsystem.model.Country" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.Country" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="conectionMongoDB" source="ec.edu.espe.dpexsystem.controller.DBConnectionController" target="ec.edu.espe.dpexsystem.controller.ConectionMongoDB" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="district" source="ec.edu.espe.dpexsystem.model.ConsularOffice" target="ec.edu.espe.dpexsystem.model.District" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="currentUser" source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.model.Recount" target="ec.edu.espe.dpexsystem.model.ElectoralPackage" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.model.Country" target="ec.edu.espe.dpexsystem.model.ConsularOffice" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="users" source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.User" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;User&gt;"/>
+    <HasRelation name="shipping" source="ec.edu.espe.dpexsystem.model.DPEX" target="ec.edu.espe.dpexsystem.model.Shipping" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="consularOffices" source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.ConsularOffice" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;ConsularOffice&gt;"/>
+    <HasRelation name="allCountries" source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.Country" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Country&gt;"/>
+    <IsRelation name="is" source="ec.edu.espe.dpexsystem.controller.ConectionMongoDB" target="ec.edu.espe.dpexsystem.controller.DBManager"/>
+    <HasRelation name="country" source="ec.edu.espe.dpexsystem.model.ElectoralPackage" target="ec.edu.espe.dpexsystem.model.Country" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.utils.LoginMenu" target="ec.edu.espe.dpexsystem.model.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="packages" source="ec.edu.espe.dpexsystem.model.Recount" target="ec.edu.espe.dpexsystem.model.ElectoralPackage" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;ElectoralPackage&gt;"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.model.User" target="ec.edu.espe.dpexsystem.model.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.controller.DBConnectionController" target="ec.edu.espe.dpexsystem.controller.ConectionMongoDB" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="allPackages" source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.ElectoralPackage" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;ElectoralPackage&gt;"/>
+    <HasRelation name="instance" source="ec.edu.espe.dpexsystem.view.FrmCountry" target="ec.edu.espe.dpexsystem.view.FrmCountry" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.model.ConsularOffice" target="ec.edu.espe.dpexsystem.model.District" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.Constituency" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="allConstituencies" source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.Constituency" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Constituency&gt;"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.controller.UserMongoDBConection" target="ec.edu.espe.dpexsystem.model.User" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.model.ElectoralPackage" target="ec.edu.espe.dpexsystem.model.Country" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.dpexsystem.view.DPEXSystem" target="ec.edu.espe.dpexsystem.model.ElectoralPackage" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ec.edu.espe.dpexsystem.controller.DBManager" target="ec.edu.espe.dpexsystem.controller.Persistence"/>
+    <HasRelation name="storage" source="ec.edu.espe.dpexsystem.model.DPEX" target="ec.edu.espe.dpexsystem.model.Storage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
