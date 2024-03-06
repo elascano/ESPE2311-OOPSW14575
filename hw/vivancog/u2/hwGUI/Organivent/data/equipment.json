@@ -1,0 +1,12 @@
+[
+  {
+    "type": "Phones",
+    "cost": 600.0,
+    "quantity": 3
+  },
+  {
+    "type": "Datafast",
+    "cost": 150.0,
+    "quantity": 3
+  }
+]

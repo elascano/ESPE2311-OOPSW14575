@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "type": "Sellers",
+    "employees": [
+      {
+        "id": 2,
+        "name": "Diego Carrera",
+        "wage": 8.0
+      },
+      {
+        "id": 3,
+        "name": "Ronnie Rodriguez",
+        "wage": 7.25
+      }
+    ],
+    "totalStaffCost": 610.0,
+    "daysWorked": 4,
+    "hoursWorked": 10
+  },
+  {
+    "id": 2,
+    "type": "Supervisor",
+    "employees": [
+      {
+        "id": 1,
+        "name": "Alejandro Redin",
+        "wage": 6.5
+      }
+    ],
+    "totalStaffCost": 286.0,
+    "daysWorked": 4,
+    "hoursWorked": 11
+  }
+]
