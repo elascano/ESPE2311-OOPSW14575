@@ -1,0 +1,14 @@
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\CSProyect.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\CSProyect.AssemblyInfoInputs.cache
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\CSProyect.AssemblyInfo.cs
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\CSProyect.csproj.CoreCompileInputs.cache
+C:\Users\Frederick\Desktop\Repo\CSProyect\bin\Debug\net8.0\CSProyect.exe
+C:\Users\Frederick\Desktop\Repo\CSProyect\bin\Debug\net8.0\CSProyect.deps.json
+C:\Users\Frederick\Desktop\Repo\CSProyect\bin\Debug\net8.0\CSProyect.runtimeconfig.json
+C:\Users\Frederick\Desktop\Repo\CSProyect\bin\Debug\net8.0\CSProyect.dll
+C:\Users\Frederick\Desktop\Repo\CSProyect\bin\Debug\net8.0\CSProyect.pdb
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\CSProyect.dll
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\refint\CSProyect.dll
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\CSProyect.pdb
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\CSProyect.genruntimeconfig.cache
+C:\Users\Frederick\Desktop\Repo\CSProyect\obj\Debug\net8.0\ref\CSProyect.dll
