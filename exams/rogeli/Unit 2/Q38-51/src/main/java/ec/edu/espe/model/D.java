@@ -8,9 +8,11 @@ import java.util.ArrayList;
  *
  * @author ilhan R
  */
-public class D extends A{
- private ArrayList<F> listF;
-    private E[] e = new E[4];
+public class D extends A{       //1
+    private ArrayList<F> listF;    //0.9  
+    private E[] e = new E[4];     //0.5
+    
+    //0.1
     
     public D(){
         listF = new ArrayList<>();
@@ -25,6 +27,8 @@ public class D extends A{
         return "D{" + "listF=" + listF + ", e=" +'{' + e + '}';
     }
 
+    //0.1
+    
     /**
      * @return the listF
      */

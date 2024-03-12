@@ -7,14 +7,16 @@ import java.util.ArrayList;
  *
  * @author ilhan
  */
-public class B extends A {
-     private ArrayList<B> b = new ArrayList<>();
+public class B extends A {   //1
+     private ArrayList<B> b = new ArrayList<>();  
 
     @Override
     public String toString() {
         return "B{" + "b=" + b + '}';
     }
-
+    
+    //0.1
+    
     /**
      * @return the b
      */
