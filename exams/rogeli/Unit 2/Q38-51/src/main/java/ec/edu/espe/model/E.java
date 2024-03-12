@@ -8,7 +8,10 @@ import java.util.ArrayList;
  *
  * @author Ilhan r
  */
-public class E {
+public class E {   //1
+    
+    //-1
+    
 private ArrayList<E> arrayListEC = new ArrayList<>();
     private E[] e = new E[5];
 

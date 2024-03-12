@@ -6,6 +6,6 @@ package ec.edu.espe.model;
  *
  * @author ilhan
  */
-public class J {
+public class J {  //1
 
 }
