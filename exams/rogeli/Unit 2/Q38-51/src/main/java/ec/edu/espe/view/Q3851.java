@@ -16,16 +16,18 @@ import ec.edu.espe.model.J;
  */
 public class Q3851 {
 
-    public static void main(String[] args) {
-        A a = new A();
-        B b = new B();
-        C c = new C();
-        D d = new D();
-        E e = new E();
-        F f = new F();
+    public static void main(String[] args) { //0.5
+        A a = new A();  
+        B b = new B();  
+        C c = new C();  
+        D d = new D();  
+        E e = new E();  
+        F f = new F();  
         G g = new G();
-        J j = new J();
-        System.out.println(a+"\n"+b+"\n"+c+"\n"+d+"\n"+e+"\n"+f+"\n"+g+"\n"+j);
+        J j = new J();  
+                        
+        //0.5
         
+        System.out.println(a+"\n"+b+"\n"+c+"\n"+d+"\n"+e+"\n"+f+"\n"+g+"\n"+j);
     }
 }

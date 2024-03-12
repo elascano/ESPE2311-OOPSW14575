@@ -5,14 +5,16 @@ package ec.edu.espe.model;
  *
  * @author Ilhan
  */
-public class A {
-    private A[] a = new A[1];
+public class A {       //0.5
+    private A[] a = new A[1];    //0.2
 
     @Override
     public String toString() {
         return "A{" + "a=" + a + '}';
     }
 
+    //0.1
+    
     /**
      * @return the a
      */
