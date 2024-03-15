@@ -139,8 +139,10 @@ public class FrmSortApp extends javax.swing.JFrame {
         appController.converStringIntoSetOfNumber(txtNumbersToSort.getText());
         appController.getBestOptionToSort();
         
-        JOptionPane.showMessageDialog(null, "the best option to sort is " + appController.numbersLength);
         
+        JOptionPane.showMessageDialog(null, "the best option to sort is " + appController.getBestSortAlgorithm);
+        DbSchema mySchema = new DbSchema(appController.getSortedNumbers(), appController.getUnsortedNumbers(), appController.getBestSortAlgorithm);
+        MongoDBManager.insert(mySchema);
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
