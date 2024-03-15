@@ -1,0 +1,33 @@
+[
+  {
+    "id": "0961fd84-19fe-4adf-bd52-15236a77e43c",
+    "username": "Olivier",
+    "encryptedPassword": "qbttxpse"
+  },
+  {
+    "id": "1e7e4218-865c-4ef4-90e5-2184332d793b",
+    "username": "olivier",
+    "encryptedPassword": "qbttxpse"
+  },
+  {
+    "role": "developer",
+    "organizationCode": "cfcbb411-471c-4230-b425-a74209a7422e",
+    "id": "098d5b0d-77f4-4be1-9052-2085e704b59f",
+    "username": "dev1",
+    "encryptedPassword": "qbttxpse"
+  },
+  {
+    "role": "admin",
+    "organizationCode": "f215ccba-e771-4ab6-87e2-bf55c8ded1bb",
+    "id": "73a6c074-423b-4485-ba79-0c39fd0d9208",
+    "username": "admin2",
+    "encryptedPassword": "qbttxpse"
+  },
+  {
+    "role": "admin",
+    "organizationCode": "4d01402b-b18d-4ef8-841f-53a27c288453",
+    "id": "3a62a733-dac8-496e-8c93-55da1584c512",
+    "username": "123",
+    "encryptedPassword": "qbttxpse"
+  }
+]
